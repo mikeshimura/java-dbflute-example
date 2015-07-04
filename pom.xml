@@ -152,11 +152,21 @@
 			<artifactId>velocity</artifactId>
 			<version>1.7</version>
 		</dependency>
-<dependency>
-	<groupId>com.atomikos</groupId>
-	<artifactId>transactions-essentials-all</artifactId>
-	<version>3.3.4</version>
-</dependency>
+		<dependency>
+			<groupId>net.arnx.jsonic</groupId>
+			<artifactId>jsonic</artifactId>
+			<version>1.2.0</version>
+		</dependency>
+		<dependency>
+		  <groupId>commons-codec</groupId>
+		  <artifactId>commons-codec</artifactId>
+		  <version>1.7</version>
+		</dependency>
+		<dependency>
+			<groupId>com.atomikos</groupId>
+			<artifactId>transactions-essentials-all</artifactId>
+			<version>3.3.4</version>
+		</dependency>
 
     </dependencies>
 

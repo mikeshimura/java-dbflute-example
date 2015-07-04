@@ -1,6 +1,8 @@
-package dbfexample.util;
+package com.mssoftech.web.util;
 
 import javax.sql.DataSource;
+
+import org.apache.commons.codec.digest.DigestUtils;
 
 import com.atomikos.jdbc.nonxa.AtomikosNonXADataSourceBean;
 
@@ -20,4 +22,8 @@ public class DbUtil {
 		bean.setBorrowConnectionTimeout(60);
 		return bean;
 	}
+	public static String createMd5(String data) {
+		return DigestUtils.md5Hex(data);
+	}
+
 }

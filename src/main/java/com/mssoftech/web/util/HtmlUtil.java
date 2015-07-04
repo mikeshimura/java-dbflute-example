@@ -1,4 +1,4 @@
-package dbfexample.util;
+package com.mssoftech.web.util;
 
 import java.io.IOException;
 import java.io.StringWriter;

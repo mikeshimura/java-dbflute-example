@@ -1,4 +1,4 @@
-package dbfexample.interceptor;
+package com.mssoftech.web.interceptor;
 
 import java.io.IOException;
 import java.time.LocalDateTime;

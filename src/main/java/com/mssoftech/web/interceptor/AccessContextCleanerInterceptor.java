@@ -1,4 +1,4 @@
-package dbfexample.interceptor;
+package com.mssoftech.web.interceptor;
 
 import java.io.IOException;
 import javax.ws.rs.container.ContainerRequestContext;
@@ -14,12 +14,12 @@ import org.slf4j.LoggerFactory;
 
 @Provider
 public class AccessContextCleanerInterceptor  implements ContainerResponseFilter {
-	private static final Logger _log = LoggerFactory.getLogger(AccessContextCleanerInterceptor.class);
+	private static final Logger log = LoggerFactory.getLogger(AccessContextCleanerInterceptor.class);
 	@Override
     public void filter(ContainerRequestContext req,
             ContainerResponseContext resp)
                     throws IOException {
 		AccessContext.clearAccessContextOnThread();
-		_log.debug("AccessContext end");
+		log.debug("AccessContext end");
 	}
 }

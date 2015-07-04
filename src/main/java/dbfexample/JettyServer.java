@@ -16,11 +16,11 @@ import org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+import com.mssoftech.web.util.DbUtil;
 
 import dbfexample.dbflute.allcommon.DBFluteModule;
 import dbfexample.module.RestEasyModule;
 import dbfexample.module.TransactionModule;
-import dbfexample.util.DbUtil;
 
 public class JettyServer {
 	public void startServer() throws Exception {

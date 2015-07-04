@@ -10,7 +10,7 @@ import javax.ws.rs.core.Context;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import dbfexample.util.HtmlUtil;
+import com.mssoftech.web.util.HtmlUtil;
 
 @Path("/")
 public class IndexRouter {
@@ -21,7 +21,8 @@ public class IndexRouter {
 //
 //	@Inject
 //	private CustomerBhv customerBhv;
-
+//	@Inject
+//	private Injector injector;
 	@GET
 	@Produces("text/html;charset=UTF-8")
 	public String index(@Context HttpServletRequest request,
@@ -30,10 +31,10 @@ public class IndexRouter {
 //		transactionManager.begin();
 //		Customer customer = new Customer();
 //		customer.setTel("TEL ROLLBACK AGAIN");
+//		CustomerBhv customerBhv = injector.getInstance(CustomerBhv.class);
 //		customerBhv.queryUpdate(customer, cb -> cb.query().setDelFlag_Equal(0));
 //		_log.debug("start rollback");
 //		transactionManager.rollback();
-//		String res = "OK";
 		String html = HtmlUtil.createHtml("メニュー画面", new String[]{"/js/$c.js", "/js/$v.js", "/js/index.js", "/js/_cjsx.js", "/js/indexjsx.js"},
 				new String[]{"/js/lib/fluxxor.js", "/js/lib/react.js", "/js/lib/react-bootstrap.js",
 					"/js/lib/jquery-1.11.1.js", "/js/lib/lodash.js"},
