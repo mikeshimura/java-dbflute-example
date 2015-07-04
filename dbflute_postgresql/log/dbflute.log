@@ -1,0 +1,1300 @@
+2014-10-04 20:10:28,081 [main] INFO  (TorqueJDBCTransformTask#begin():104) - +------------------------------------------+
+2014-10-04 20:10:28,086 [main] INFO  (TorqueJDBCTransformTask#begin():105) - |                                          |
+2014-10-04 20:10:28,087 [main] INFO  (TorqueJDBCTransformTask#begin():106) - |                   JDBC                   |
+2014-10-04 20:10:28,088 [main] INFO  (TorqueJDBCTransformTask#begin():107) - |                                          |
+2014-10-04 20:10:28,088 [main] INFO  (TorqueJDBCTransformTask#begin():108) - +------------------------------------------+
+2014-10-04 20:10:28,116 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2014-10-04 20:10:28,117 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2014-10-04 20:10:28,117 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://localhost:5432/frams
+2014-10-04 20:10:28,118 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = test
+2014-10-04 20:10:28,165 [main] INFO  (DfSchemaXmlSerializer#serialize():286) - 
+2014-10-04 20:10:28,165 [main] INFO  (DfSchemaXmlSerializer#serialize():287) - ...Starting to process JDBC to SchemaXML
+2014-10-04 20:10:28,166 [main] INFO  (DfSchemaXmlSerializer#doLoadPreviousSchema():1469) - ...Loading previous schema (schema diff process)
+2014-10-04 20:10:28,166 [main] INFO  (DfSchemaXmlSerializer#doLoadPreviousSchema():1472) -  -> no previous (first time)
+2014-10-04 20:10:28,187 [main] INFO  (DfSchemaXmlSerializer#generateXML():361) - ...Getting DB connection
+2014-10-04 20:10:28,222 [main] INFO  (DfDataSourceHandler#createConnection():168) - ...Connecting to database by data source:
+2014-10-04 20:10:28,375 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():235) -   product = PostgreSQL 9.1.7
+2014-10-04 20:10:28,376 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():236) -   driver  = PostgreSQL Native Driver PostgreSQL 8.4 JDBC3 (build 701) for JDBC 3.0
+2014-10-04 20:10:28,389 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():77) - ...Connecting to the schema
+2014-10-04 20:10:28,389 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():78) - set search_path to public
+2014-10-04 20:10:28,394 [main] INFO  (DfSchemaXmlSerializer#generateXML():364) - ...Getting DB meta data
+2014-10-04 20:10:28,398 [main] INFO  (DfTableExtractor#doGetTableList():67) - ...Getting tables:
+2014-10-04 20:10:28,399 [main] INFO  (DfTableExtractor#doGetTableList():68) -   schema = {frams.public as main}
+2014-10-04 20:10:28,399 [main] INFO  (DfTableExtractor#doGetTableList():69) -   types  = [TABLE, VIEW]
+2014-10-04 20:10:28,505 [main] INFO  (DfSchemaXmlSerializer#processTable():421) - 
+2014-10-04 20:10:28,506 [main] INFO  (DfSchemaXmlSerializer#processTable():422) - $ /= = = = = = = = = = = = = = = = = = = = = = = = = =
+2014-10-04 20:10:28,506 [main] INFO  (DfSchemaXmlSerializer#processTable():423) - $ [Table List]
+2014-10-04 20:10:28,506 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.acct_code(TABLE)
+2014-10-04 20:10:28,686 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.auth_login(TABLE)
+2014-10-04 20:10:28,786 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.bal_start(TABLE)
+2014-10-04 20:10:28,817 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.company(TABLE)
+2014-10-04 20:10:28,841 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.company_fy(TABLE)
+2014-10-04 20:10:28,867 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.journal(TABLE)
+2014-10-04 20:10:28,903 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.journal_wk(TABLE)
+2014-10-04 20:10:28,948 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.login(TABLE)
+2014-10-04 20:10:28,981 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.session(TABLE)
+2014-10-04 20:10:29,004 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.sub_code(TABLE)
+2014-10-04 20:10:29,028 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.sys_table(TABLE)
+2014-10-04 20:10:29,079 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.temp_item(TABLE)
+2014-10-04 20:10:29,148 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.template(TABLE)
+2014-10-04 20:10:29,209 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.user_table(TABLE)
+2014-10-04 20:10:29,270 [main] INFO  (DfSchemaXmlSerializer#processTable():435) - $ 
+2014-10-04 20:10:29,271 [main] INFO  (DfSchemaXmlSerializer#processTable():436) - $ [Table Count]
+2014-10-04 20:10:29,272 [main] INFO  (DfSchemaXmlSerializer#processTable():437) - $ 14
+2014-10-04 20:10:29,273 [main] INFO  (DfSchemaXmlSerializer#processTable():438) - $ = = = = = = = = = =/
+2014-10-04 20:10:29,274 [main] INFO  (DfSchemaXmlSerializer#processTable():439) - 
+2014-10-04 20:10:29,289 [main] INFO  (DfSchemaXmlSerializer#processSequence():799) - ...Getting sequences
+2014-10-04 20:10:29,298 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():53) - ...Loading sequence informations
+2014-10-04 20:10:29,304 [main] INFO  (DfSequenceExtractorBase#selectStringList():75) - select * from information_schema.sequences where sequence_schema in ('public')
+2014-10-04 20:10:29,316 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():99) - 
+[SEQUENCE]
+ frams.public.login_id_seq = frams.public.login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_id_seq = frams.public.company_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.auth_login_id_seq = frams.public.auth_login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.acct_code_id_seq = frams.public.acct_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sub_code_id_seq = frams.public.sub_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.bal_start_id_seq = frams.public.bal_start_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sys_table_id_seq = frams.public.sys_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.user_table_id_seq = frams.public.user_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_id_seq = frams.public.journal_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.session_id_seq = frams.public.session_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_fy_id_seq = frams.public.company_fy_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_wk_id_seq = frams.public.journal_wk_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.template_id_seq = frams.public.template_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.temp_item_id_seq = frams.public.temp_item_id_seq:{1 to 9223372036854775807, increment 1}
+2014-10-04 20:10:29,323 [main] INFO  (DfSchemaXmlSerializer#processSequence():804) - ...Processing sequences: 14
+2014-10-04 20:10:29,355 [main] INFO  (DfSchemaXmlSerializer#serialize():301) - ...Serializing XML:
+2014-10-04 20:10:29,355 [main] INFO  (DfSchemaXmlSerializer#serialize():302) -   filePath = ./schema/project-schema-postgresql.xml
+2014-10-04 20:10:29,356 [main] INFO  (DfSchemaXmlSerializer#serialize():303) -   encoding = UTF-8
+2014-10-04 20:10:29,387 [main] INFO  (DfDataSourceHandler#destroy():121) - ...closeReally()
+2014-10-04 20:10:29,414 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():150) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m01s328ms
+
+  DBFLUTE_CLIENT: {postgresql}
+    database  = postgresql (PostgreSQL 9.1.7)
+    language  = java
+    container = seasar
+    package   = com.mssoftech.web.dbflute
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver
+    url    = jdbc:postgresql://localhost:5432/frams
+    schema = {frams.public as main}
+    user   = test
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = dbflute1.1
+_/_/_/_/_/_/_/_/_/_/ {JDBC}
+2014-10-04 20:10:40,069 [main] INFO  (TorqueDataModelTask#begin():109) - +------------------------------------------+
+2014-10-04 20:10:40,073 [main] INFO  (TorqueDataModelTask#begin():110) - |                                          |
+2014-10-04 20:10:40,074 [main] INFO  (TorqueDataModelTask#begin():111) - |                 Generate                 |
+2014-10-04 20:10:40,074 [main] INFO  (TorqueDataModelTask#begin():112) - |                                          |
+2014-10-04 20:10:40,075 [main] INFO  (TorqueDataModelTask#begin():113) - +------------------------------------------+
+2014-10-04 20:10:40,100 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2014-10-04 20:10:40,101 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2014-10-04 20:10:40,101 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://localhost:5432/frams
+2014-10-04 20:10:40,102 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = test
+2014-10-04 20:10:40,127 [main] INFO  (TorqueDataModelTask#setupControlTemplate():164) - 
+2014-10-04 20:10:40,127 [main] INFO  (TorqueDataModelTask#setupControlTemplate():165) - ...Using Java control: om/ControlGenerateJava.vm
+2014-10-04 20:10:40,301 [main] INFO  (DTDResolver#resolveEntity():197) - ...Resolving XML by database.dtd in same package
+2014-10-04 20:10:40,373 [main] INFO  (DfAbstractTexenTask#fireVelocityProcess():255) - generator.parse("om/ControlGenerateJava.vm", c);
+2014-10-04 20:10:40,468 [main] INFO  (Database#doEnableGenerateOutputDirectory():1148) - ...Setting up generateOutputDirectory: ../src/main/java
+2014-10-04 20:10:40,474 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():62) - /=======================================
+2014-10-04 20:10:40,475 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():63) - ...Initializing additional primary keys.
+2014-10-04 20:10:40,476 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():88) - ==========/
+2014-10-04 20:10:40,477 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():62) - /=======================================
+2014-10-04 20:10:40,478 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():63) - ...Initializing additional unique keys.
+2014-10-04 20:10:40,479 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():83) - ==========/
+2014-10-04 20:10:40,481 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():68) - /=======================================
+2014-10-04 20:10:40,482 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():69) - ...Initializing additional foreign keys.
+2014-10-04 20:10:40,485 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():86) - ==========/
+2014-10-04 20:10:40,502 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():59) - /=============================
+2014-10-04 20:10:40,503 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():60) - ...Initializing include query.
+2014-10-04 20:10:40,504 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - String
+2014-10-04 20:10:40,504 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - Number
+2014-10-04 20:10:40,505 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - Date
+2014-10-04 20:10:40,505 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():88) -   NotEqual -> []
+2014-10-04 20:10:40,506 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():88) -   InScope -> []
+2014-10-04 20:10:40,506 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():88) -   NotInScope -> []
+2014-10-04 20:10:40,506 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - OrderBy
+2014-10-04 20:10:40,507 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():62) - ========/
+2014-10-04 20:10:40,523 [main] INFO  (Database#info():2629) - public void parseAllCommon() {
+2014-10-04 20:10:40,526 [main] INFO  (Database#info():2629) -     parse('DBCurrent');
+2014-10-04 20:10:40,531 [main] INFO  (Database#info():2629) -     parse('DBFluteConfig');
+2014-10-04 20:10:40,546 [main] INFO  (Database#info():2629) -     parse('DBFluteInitializer');
+2014-10-04 20:10:40,554 [main] INFO  (Database#info():2629) -     parse('DBMetaInstanceHandler');
+2014-10-04 20:10:40,576 [main] INFO  (Database#info():2629) -     parse('EntityDefinedCommonColumn');
+2014-10-04 20:10:40,579 [main] INFO  (Database#info():2629) -     parse('ImplementedBehaviorSelector');
+2014-10-04 20:10:40,582 [main] INFO  (Database#info():2629) -     parse('ImplementedCommonColumnAutoSetupper');
+2014-10-04 20:10:40,586 [main] INFO  (Database#info():2629) -     parse('ImplementedInvokerAssistant');
+2014-10-04 20:10:40,589 [main] INFO  (Database#info():2629) -     parse('ImplementedSqlClauseCreator');
+2014-10-04 20:10:40,591 [main] INFO  (Database#info():2629) - }
+2014-10-04 20:10:40,592 [main] INFO  (Database#info():2629) - public void parseContainerConfig() {
+2014-10-04 20:10:40,593 [main] INFO  (Database#info():2629) -     parse('../resources/dbflute.dicon')
+2014-10-04 20:10:40,610 [main] INFO  (Database#info():2629) - }
+2014-10-04 20:10:40,623 [main] INFO  (DfOldClassHandler#info():1040) - public void deleteOldTableClass() {
+2014-10-04 20:10:40,667 [main] INFO  (DfOldClassHandler#info():1040) - }
+2014-10-04 20:10:40,668 [main] INFO  (Database#info():2629) - public void parseTableClass() {
+2014-10-04 20:10:40,669 [main] INFO  (Database#info():2629) -     parse('acct_code');
+2014-10-04 20:10:40,836 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():53) - ...Loading sequence informations
+2014-10-04 20:10:40,839 [main] INFO  (DfSequenceExtractorBase#selectStringList():75) - select * from information_schema.sequences where sequence_schema in ('public')
+2014-10-04 20:10:40,851 [main] INFO  (DfDataSourceHandler#createConnection():168) - ...Connecting to database by data source:
+2014-10-04 20:10:40,949 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():235) -   product = PostgreSQL 9.1.7
+2014-10-04 20:10:40,950 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():236) -   driver  = PostgreSQL Native Driver PostgreSQL 8.4 JDBC3 (build 701) for JDBC 3.0
+2014-10-04 20:10:40,963 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():77) - ...Connecting to the schema
+2014-10-04 20:10:40,964 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():78) - set search_path to public
+2014-10-04 20:10:40,991 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():99) - 
+[SEQUENCE]
+ frams.public.login_id_seq = frams.public.login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_id_seq = frams.public.company_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.auth_login_id_seq = frams.public.auth_login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.acct_code_id_seq = frams.public.acct_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sub_code_id_seq = frams.public.sub_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.bal_start_id_seq = frams.public.bal_start_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sys_table_id_seq = frams.public.sys_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.user_table_id_seq = frams.public.user_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_id_seq = frams.public.journal_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.session_id_seq = frams.public.session_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_fy_id_seq = frams.public.company_fy_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_wk_id_seq = frams.public.journal_wk_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.template_id_seq = frams.public.template_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.temp_item_id_seq = frams.public.temp_item_id_seq:{1 to 9223372036854775807, increment 1}
+2014-10-04 20:10:41,155 [main] INFO  (Database#info():2629) -     parse('auth_login');
+2014-10-04 20:10:41,321 [main] INFO  (Database#info():2629) -     parse('bal_start');
+2014-10-04 20:10:41,500 [main] INFO  (Database#info():2629) -     parse('company');
+2014-10-04 20:10:41,687 [main] INFO  (Database#info():2629) -     parse('company_fy');
+2014-10-04 20:10:41,790 [main] INFO  (Database#info():2629) -     parse('journal');
+2014-10-04 20:10:41,966 [main] INFO  (Database#info():2629) -     parse('journal_wk');
+2014-10-04 20:10:42,091 [main] INFO  (Database#info():2629) -     parse('login');
+2014-10-04 20:10:42,212 [main] INFO  (Database#info():2629) -     parse('session');
+2014-10-04 20:10:42,315 [main] INFO  (Database#info():2629) -     parse('sub_code');
+2014-10-04 20:10:42,460 [main] INFO  (Database#info():2629) -     parse('sys_table');
+2014-10-04 20:10:42,563 [main] INFO  (Database#info():2629) -     parse('temp_item');
+2014-10-04 20:10:42,687 [main] INFO  (Database#info():2629) -     parse('template');
+2014-10-04 20:10:42,781 [main] INFO  (Database#info():2629) -     parse('user_table');
+2014-10-04 20:10:42,877 [main] INFO  (Database#info():2629) - }
+2014-10-04 20:10:42,878 [main] INFO  (Database#info():2629) -  
+2014-10-04 20:10:43,442 [main] INFO  (DfRefreshResourceProcess#refreshResources():63) - ...Refreshing: [dbflute1.1]
+2014-10-04 20:10:44,473 [main] INFO  (DfRefreshResourceProcess#refreshResources():68) - Look! Read the message below.
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Failed to refresh the resources.
+
+[Project List]
+[dbflute1.1]
+
+[Request URL]
+http://localhost:8386/
+
+[IOExpception]
+ConnectException
+Connection refused: connect
+* * * * * * * * * */
+2014-10-04 20:10:44,477 [main] INFO  (DfDataSourceHandler#destroy():121) - ...closeReally()
+2014-10-04 20:10:44,482 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():150) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m04s431ms
+
+  DBFLUTE_CLIENT: {postgresql}
+    database  = postgresql (PostgreSQL 9.1.7)
+    language  = java
+    container = seasar
+    package   = com.mssoftech.web.dbflute
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver
+    url    = jdbc:postgresql://localhost:5432/frams
+    schema = {frams.public as main}
+    user   = test
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = dbflute1.1
+_/_/_/_/_/_/_/_/_/_/ {Generate}
+2014-10-04 20:10:49,822 [main] INFO  (TorqueDocumentationTask#begin():175) - +------------------------------------------+
+2014-10-04 20:10:49,825 [main] INFO  (TorqueDocumentationTask#begin():176) - |                                          |
+2014-10-04 20:10:49,826 [main] INFO  (TorqueDocumentationTask#begin():177) - |                   Doc                    |
+2014-10-04 20:10:49,827 [main] INFO  (TorqueDocumentationTask#begin():185) - |                                          |
+2014-10-04 20:10:49,827 [main] INFO  (TorqueDocumentationTask#begin():186) - +------------------------------------------+
+2014-10-04 20:10:49,854 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2014-10-04 20:10:49,854 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2014-10-04 20:10:49,855 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://localhost:5432/frams
+2014-10-04 20:10:49,855 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = test
+2014-10-04 20:10:49,858 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():246) - 
+2014-10-04 20:10:49,859 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():247) - * * * * * * * * * * *
+2014-10-04 20:10:49,859 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():248) - *                   *
+2014-10-04 20:10:49,859 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():249) - *    Schema HTML    *
+2014-10-04 20:10:49,860 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():250) - *                   *
+2014-10-04 20:10:49,860 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():251) - * * * * * * * * * * *
+2014-10-04 20:10:50,035 [main] INFO  (DTDResolver#resolveEntity():197) - ...Resolving XML by database.dtd in same package
+2014-10-04 20:10:50,118 [main] INFO  (DfAbstractTexenTask#fireVelocityProcess():255) - generator.parse("doc/ControlDocument.vm", c);
+2014-10-04 20:10:50,188 [main] INFO  (Database#doEnableDocumentOutputDirectory():1180) - ...Setting up documentOutputDirectory: ./output/doc
+2014-10-04 20:10:50,197 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():62) - /=======================================
+2014-10-04 20:10:50,198 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():63) - ...Initializing additional primary keys.
+2014-10-04 20:10:50,200 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():88) - ==========/
+2014-10-04 20:10:50,201 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():62) - /=======================================
+2014-10-04 20:10:50,201 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():63) - ...Initializing additional unique keys.
+2014-10-04 20:10:50,203 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():83) - ==========/
+2014-10-04 20:10:50,204 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():68) - /=======================================
+2014-10-04 20:10:50,205 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():69) - ...Initializing additional foreign keys.
+2014-10-04 20:10:50,207 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():86) - ==========/
+2014-10-04 20:10:50,216 [main] INFO  (DfDocumentSelector#doLoadSchemaHistory():150) - ...Loading schema history
+2014-10-04 20:10:50,217 [main] INFO  (DfDocumentSelector#doLoadSchemaHistory():156) -  -> no history
+2014-10-04 20:10:50,307 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():53) - ...Loading sequence informations
+2014-10-04 20:10:50,310 [main] INFO  (DfSequenceExtractorBase#selectStringList():75) - select * from information_schema.sequences where sequence_schema in ('public')
+2014-10-04 20:10:50,322 [main] INFO  (DfDataSourceHandler#createConnection():168) - ...Connecting to database by data source:
+2014-10-04 20:10:50,419 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():235) -   product = PostgreSQL 9.1.7
+2014-10-04 20:10:50,420 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():236) -   driver  = PostgreSQL Native Driver PostgreSQL 8.4 JDBC3 (build 701) for JDBC 3.0
+2014-10-04 20:10:50,433 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():77) - ...Connecting to the schema
+2014-10-04 20:10:50,434 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():78) - set search_path to public
+2014-10-04 20:10:50,461 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():99) - 
+[SEQUENCE]
+ frams.public.login_id_seq = frams.public.login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_id_seq = frams.public.company_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.auth_login_id_seq = frams.public.auth_login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.acct_code_id_seq = frams.public.acct_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sub_code_id_seq = frams.public.sub_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.bal_start_id_seq = frams.public.bal_start_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sys_table_id_seq = frams.public.sys_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.user_table_id_seq = frams.public.user_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_id_seq = frams.public.journal_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.session_id_seq = frams.public.session_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_fy_id_seq = frams.public.company_fy_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_wk_id_seq = frams.public.journal_wk_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.template_id_seq = frams.public.template_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.temp_item_id_seq = frams.public.temp_item_id_seq:{1 to 9223372036854775807, increment 1}
+2014-10-04 20:10:50,728 [main] INFO  (DfRefreshResourceProcess#refreshResources():63) - ...Refreshing: [dbflute1.1]
+2014-10-04 20:10:51,741 [main] INFO  (DfRefreshResourceProcess#refreshResources():68) - Look! Read the message below.
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Failed to refresh the resources.
+
+[Project List]
+[dbflute1.1]
+
+[Request URL]
+http://localhost:8386/
+
+[IOExpception]
+ConnectException
+Connection refused: connect
+* * * * * * * * * */
+2014-10-04 20:10:51,748 [main] INFO  (DfDataSourceHandler#destroy():121) - ...closeReally()
+2014-10-04 20:10:51,754 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():150) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m01s947ms
+
+  DBFLUTE_CLIENT: {postgresql}
+    database  = postgresql (PostgreSQL 9.1.7)
+    language  = java
+    container = seasar
+    package   = com.mssoftech.web.dbflute
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver
+    url    = jdbc:postgresql://localhost:5432/frams
+    schema = {frams.public as main}
+    user   = test
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = dbflute1.1
+_/_/_/_/_/_/_/_/_/_/ {Doc}
+2014-10-04 20:22:40,719 [main] INFO  (TorqueDataModelTask#begin():109) - +------------------------------------------+
+2014-10-04 20:22:40,723 [main] INFO  (TorqueDataModelTask#begin():110) - |                                          |
+2014-10-04 20:22:40,723 [main] INFO  (TorqueDataModelTask#begin():111) - |                 Generate                 |
+2014-10-04 20:22:40,724 [main] INFO  (TorqueDataModelTask#begin():112) - |                                          |
+2014-10-04 20:22:40,724 [main] INFO  (TorqueDataModelTask#begin():113) - +------------------------------------------+
+2014-10-04 20:22:40,750 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2014-10-04 20:22:40,750 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2014-10-04 20:22:40,751 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://localhost:5432/frams
+2014-10-04 20:22:40,751 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = test
+2014-10-04 20:22:40,772 [main] INFO  (TorqueDataModelTask#setupControlTemplate():164) - 
+2014-10-04 20:22:40,773 [main] INFO  (TorqueDataModelTask#setupControlTemplate():165) - ...Using Java control: om/ControlGenerateJava.vm
+2014-10-04 20:22:40,935 [main] INFO  (DTDResolver#resolveEntity():197) - ...Resolving XML by database.dtd in same package
+2014-10-04 20:22:41,002 [main] INFO  (DfAbstractTexenTask#fireVelocityProcess():255) - generator.parse("om/ControlGenerateJava.vm", c);
+2014-10-04 20:22:41,095 [main] INFO  (Database#doEnableGenerateOutputDirectory():1148) - ...Setting up generateOutputDirectory: ../src/main/java
+2014-10-04 20:22:41,100 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():62) - /=======================================
+2014-10-04 20:22:41,101 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():63) - ...Initializing additional primary keys.
+2014-10-04 20:22:41,103 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():88) - ==========/
+2014-10-04 20:22:41,104 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():62) - /=======================================
+2014-10-04 20:22:41,105 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():63) - ...Initializing additional unique keys.
+2014-10-04 20:22:41,106 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():83) - ==========/
+2014-10-04 20:22:41,108 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():68) - /=======================================
+2014-10-04 20:22:41,109 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():69) - ...Initializing additional foreign keys.
+2014-10-04 20:22:41,111 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():86) - ==========/
+2014-10-04 20:22:41,125 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():59) - /=============================
+2014-10-04 20:22:41,125 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():60) - ...Initializing include query.
+2014-10-04 20:22:41,126 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - String
+2014-10-04 20:22:41,126 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - Number
+2014-10-04 20:22:41,126 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - Date
+2014-10-04 20:22:41,127 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():88) -   NotEqual -> []
+2014-10-04 20:22:41,127 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():88) -   InScope -> []
+2014-10-04 20:22:41,127 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():88) -   NotInScope -> []
+2014-10-04 20:22:41,128 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - OrderBy
+2014-10-04 20:22:41,128 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():62) - ========/
+2014-10-04 20:22:41,145 [main] INFO  (Database#info():2629) - public void parseAllCommon() {
+2014-10-04 20:22:41,149 [main] INFO  (Database#info():2629) -     parse('DBCurrent');
+2014-10-04 20:22:41,154 [main] INFO  (Database#info():2629) -     parse('DBFluteConfig');
+2014-10-04 20:22:41,167 [main] INFO  (Database#info():2629) -     parse('DBFluteInitializer');
+2014-10-04 20:22:41,173 [main] INFO  (Database#info():2629) -     parse('DBMetaInstanceHandler');
+2014-10-04 20:22:41,198 [main] INFO  (Database#info():2629) -     parse('EntityDefinedCommonColumn');
+2014-10-04 20:22:41,202 [main] INFO  (Database#info():2629) -     parse('ImplementedBehaviorSelector');
+2014-10-04 20:22:41,205 [main] INFO  (Database#info():2629) -     parse('ImplementedCommonColumnAutoSetupper');
+2014-10-04 20:22:41,209 [main] INFO  (Database#info():2629) -     parse('ImplementedInvokerAssistant');
+2014-10-04 20:22:41,212 [main] INFO  (Database#info():2629) -     parse('ImplementedSqlClauseCreator');
+2014-10-04 20:22:41,214 [main] INFO  (Database#info():2629) - }
+2014-10-04 20:22:41,214 [main] INFO  (Database#info():2629) - public void parseContainerConfig() {
+2014-10-04 20:22:41,215 [main] INFO  (Database#info():2629) -     parse('../resources/dbflute.dicon')
+2014-10-04 20:22:41,258 [main] INFO  (Database#info():2629) - }
+2014-10-04 20:22:41,264 [main] INFO  (DfOldClassHandler#info():1040) - public void deleteOldTableClass() {
+2014-10-04 20:22:41,312 [main] INFO  (DfOldClassHandler#info():1040) - }
+2014-10-04 20:22:41,313 [main] INFO  (Database#info():2629) - public void parseTableClass() {
+2014-10-04 20:22:41,314 [main] INFO  (Database#info():2629) -     parse('acct_code');
+2014-10-04 20:22:41,494 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():53) - ...Loading sequence informations
+2014-10-04 20:22:41,498 [main] INFO  (DfSequenceExtractorBase#selectStringList():75) - select * from information_schema.sequences where sequence_schema in ('public')
+2014-10-04 20:22:41,515 [main] INFO  (DfDataSourceHandler#createConnection():168) - ...Connecting to database by data source:
+2014-10-04 20:22:41,627 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():235) -   product = PostgreSQL 9.1.7
+2014-10-04 20:22:41,627 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():236) -   driver  = PostgreSQL Native Driver PostgreSQL 8.4 JDBC3 (build 701) for JDBC 3.0
+2014-10-04 20:22:41,643 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():77) - ...Connecting to the schema
+2014-10-04 20:22:41,643 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():78) - set search_path to public
+2014-10-04 20:22:41,674 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():99) - 
+[SEQUENCE]
+ frams.public.login_id_seq = frams.public.login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_id_seq = frams.public.company_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.auth_login_id_seq = frams.public.auth_login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.acct_code_id_seq = frams.public.acct_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sub_code_id_seq = frams.public.sub_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.bal_start_id_seq = frams.public.bal_start_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sys_table_id_seq = frams.public.sys_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.user_table_id_seq = frams.public.user_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_id_seq = frams.public.journal_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.session_id_seq = frams.public.session_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_fy_id_seq = frams.public.company_fy_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_wk_id_seq = frams.public.journal_wk_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.template_id_seq = frams.public.template_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.temp_item_id_seq = frams.public.temp_item_id_seq:{1 to 9223372036854775807, increment 1}
+2014-10-04 20:22:41,846 [main] INFO  (Database#info():2629) -     parse('auth_login');
+2014-10-04 20:22:42,003 [main] INFO  (Database#info():2629) -     parse('bal_start');
+2014-10-04 20:22:42,193 [main] INFO  (Database#info():2629) -     parse('company');
+2014-10-04 20:22:42,371 [main] INFO  (Database#info():2629) -     parse('company_fy');
+2014-10-04 20:22:42,476 [main] INFO  (Database#info():2629) -     parse('journal');
+2014-10-04 20:22:42,613 [main] INFO  (Database#info():2629) -     parse('journal_wk');
+2014-10-04 20:22:42,753 [main] INFO  (Database#info():2629) -     parse('login');
+2014-10-04 20:22:42,880 [main] INFO  (Database#info():2629) -     parse('session');
+2014-10-04 20:22:42,980 [main] INFO  (Database#info():2629) -     parse('sub_code');
+2014-10-04 20:22:43,117 [main] INFO  (Database#info():2629) -     parse('sys_table');
+2014-10-04 20:22:43,216 [main] INFO  (Database#info():2629) -     parse('temp_item');
+2014-10-04 20:22:43,333 [main] INFO  (Database#info():2629) -     parse('template');
+2014-10-04 20:22:43,433 [main] INFO  (Database#info():2629) -     parse('user_table');
+2014-10-04 20:22:43,546 [main] INFO  (Database#info():2629) - }
+2014-10-04 20:22:43,546 [main] INFO  (Database#info():2629) -  
+2014-10-04 20:22:43,571 [main] INFO  (DfRefreshResourceProcess#refreshResources():63) - ...Refreshing: [dbflute1.1]
+2014-10-04 20:22:44,577 [main] INFO  (DfRefreshResourceProcess#refreshResources():68) - Look! Read the message below.
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Failed to refresh the resources.
+
+[Project List]
+[dbflute1.1]
+
+[Request URL]
+http://localhost:8386/
+
+[IOExpception]
+ConnectException
+Connection refused: connect
+* * * * * * * * * */
+2014-10-04 20:22:44,583 [main] INFO  (DfDataSourceHandler#destroy():121) - ...closeReally()
+2014-10-04 20:22:44,591 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():150) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m03s887ms
+
+  DBFLUTE_CLIENT: {postgresql}
+    database  = postgresql (PostgreSQL 9.1.7)
+    language  = java
+    container = seasar
+    package   = com.mssoftech.web.dbflute
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver
+    url    = jdbc:postgresql://localhost:5432/frams
+    schema = {frams.public as main}
+    user   = test
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = dbflute1.1
+_/_/_/_/_/_/_/_/_/_/ {Generate}
+2014-10-12 05:49:32,374 [main] INFO  (TorqueJDBCTransformTask#begin():104) - +------------------------------------------+
+2014-10-12 05:49:32,388 [main] INFO  (TorqueJDBCTransformTask#begin():105) - |                                          |
+2014-10-12 05:49:32,389 [main] INFO  (TorqueJDBCTransformTask#begin():106) - |                   JDBC                   |
+2014-10-12 05:49:32,389 [main] INFO  (TorqueJDBCTransformTask#begin():107) - |                                          |
+2014-10-12 05:49:32,390 [main] INFO  (TorqueJDBCTransformTask#begin():108) - +------------------------------------------+
+2014-10-12 05:49:32,453 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2014-10-12 05:49:32,454 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2014-10-12 05:49:32,454 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://localhost:5432/frams
+2014-10-12 05:49:32,455 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = test
+2014-10-12 05:49:32,532 [main] INFO  (DfSchemaXmlSerializer#serialize():286) - 
+2014-10-12 05:49:32,533 [main] INFO  (DfSchemaXmlSerializer#serialize():287) - ...Starting to process JDBC to SchemaXML
+2014-10-12 05:49:32,534 [main] INFO  (DfSchemaXmlSerializer#doLoadPreviousSchema():1469) - ...Loading previous schema (schema diff process)
+2014-10-12 05:49:32,550 [main] INFO  (DTDResolver#resolveEntity():197) - ...Resolving XML by database.dtd in same package
+2014-10-12 05:49:32,688 [main] INFO  (DfSchemaXmlSerializer#generateXML():361) - ...Getting DB connection
+2014-10-12 05:49:32,704 [main] INFO  (DfDataSourceHandler#createConnection():168) - ...Connecting to database by data source:
+2014-10-12 05:49:32,839 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():235) -   product = PostgreSQL 9.1.7
+2014-10-12 05:49:32,840 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():236) -   driver  = PostgreSQL Native Driver PostgreSQL 8.4 JDBC3 (build 701) for JDBC 3.0
+2014-10-12 05:49:32,857 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():77) - ...Connecting to the schema
+2014-10-12 05:49:32,857 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():78) - set search_path to public
+2014-10-12 05:49:32,863 [main] INFO  (DfSchemaXmlSerializer#generateXML():364) - ...Getting DB meta data
+2014-10-12 05:49:32,866 [main] INFO  (DfTableExtractor#doGetTableList():67) - ...Getting tables:
+2014-10-12 05:49:32,867 [main] INFO  (DfTableExtractor#doGetTableList():68) -   schema = {frams.public as main}
+2014-10-12 05:49:32,867 [main] INFO  (DfTableExtractor#doGetTableList():69) -   types  = [TABLE, VIEW]
+2014-10-12 05:49:32,911 [main] INFO  (DfSchemaXmlSerializer#processTable():421) - 
+2014-10-12 05:49:32,911 [main] INFO  (DfSchemaXmlSerializer#processTable():422) - $ /= = = = = = = = = = = = = = = = = = = = = = = = = =
+2014-10-12 05:49:32,912 [main] INFO  (DfSchemaXmlSerializer#processTable():423) - $ [Table List]
+2014-10-12 05:49:32,912 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.acct_code(TABLE)
+2014-10-12 05:49:33,007 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.auth_login(TABLE)
+2014-10-12 05:49:33,042 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.bal_start(TABLE)
+2014-10-12 05:49:33,073 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.company(TABLE)
+2014-10-12 05:49:33,100 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.company_fy(TABLE)
+2014-10-12 05:49:33,128 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.journal(TABLE)
+2014-10-12 05:49:33,167 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.journal_wk(TABLE)
+2014-10-12 05:49:33,196 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.login(TABLE)
+2014-10-12 05:49:33,221 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.session(TABLE)
+2014-10-12 05:49:33,251 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.sub_code(TABLE)
+2014-10-12 05:49:33,278 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.sys_table(TABLE)
+2014-10-12 05:49:33,306 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.temp_item(TABLE)
+2014-10-12 05:49:33,342 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.template(TABLE)
+2014-10-12 05:49:33,367 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():506) - $ frams.public.user_table(TABLE)
+2014-10-12 05:49:33,390 [main] INFO  (DfSchemaXmlSerializer#processTable():435) - $ 
+2014-10-12 05:49:33,391 [main] INFO  (DfSchemaXmlSerializer#processTable():436) - $ [Table Count]
+2014-10-12 05:49:33,391 [main] INFO  (DfSchemaXmlSerializer#processTable():437) - $ 14
+2014-10-12 05:49:33,392 [main] INFO  (DfSchemaXmlSerializer#processTable():438) - $ = = = = = = = = = =/
+2014-10-12 05:49:33,392 [main] INFO  (DfSchemaXmlSerializer#processTable():439) - 
+2014-10-12 05:49:33,406 [main] INFO  (DfSchemaXmlSerializer#processSequence():799) - ...Getting sequences
+2014-10-12 05:49:33,411 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():53) - ...Loading sequence informations
+2014-10-12 05:49:33,414 [main] INFO  (DfSequenceExtractorBase#selectStringList():75) - select * from information_schema.sequences where sequence_schema in ('public')
+2014-10-12 05:49:33,420 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():99) - 
+[SEQUENCE]
+ frams.public.login_id_seq = frams.public.login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_id_seq = frams.public.company_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.auth_login_id_seq = frams.public.auth_login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.acct_code_id_seq = frams.public.acct_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sub_code_id_seq = frams.public.sub_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.bal_start_id_seq = frams.public.bal_start_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sys_table_id_seq = frams.public.sys_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.user_table_id_seq = frams.public.user_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_id_seq = frams.public.journal_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.session_id_seq = frams.public.session_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_fy_id_seq = frams.public.company_fy_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_wk_id_seq = frams.public.journal_wk_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.template_id_seq = frams.public.template_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.temp_item_id_seq = frams.public.temp_item_id_seq:{1 to 9223372036854775807, increment 1}
+2014-10-12 05:49:33,426 [main] INFO  (DfSchemaXmlSerializer#processSequence():804) - ...Processing sequences: 14
+2014-10-12 05:49:33,445 [main] INFO  (DfSchemaXmlSerializer#serialize():301) - ...Serializing XML:
+2014-10-12 05:49:33,446 [main] INFO  (DfSchemaXmlSerializer#serialize():302) -   filePath = ./schema/project-schema-postgresql.xml
+2014-10-12 05:49:33,446 [main] INFO  (DfSchemaXmlSerializer#serialize():303) -   encoding = UTF-8
+2014-10-12 05:49:33,474 [main] INFO  (DfSchemaXmlSerializer#doLoadNextSchema():1487) - ...Loading next schema (schema diff process)
+2014-10-12 05:49:33,476 [main] INFO  (DTDResolver#resolveEntity():197) - ...Resolving XML by database.dtd in same package
+2014-10-12 05:49:33,552 [main] INFO  (DfSchemaXmlSerializer#doLoadNextSchema():1492) -  -> different from previous (schema diff)
+2014-10-12 05:49:33,554 [main] INFO  (DfSchemaXmlSerializer#doLoadNextSchema():1494) - ...Serializing schema-diff:
+2014-10-12 05:49:33,555 [main] INFO  (DfSchemaXmlSerializer#doLoadNextSchema():1495) -   filePath = ./schema/project-history-postgresql.diffmap
+2014-10-12 05:49:33,558 [main] INFO  (DfDataSourceHandler#destroy():121) - ...closeReally()
+2014-10-12 05:49:33,570 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():150) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m01s210ms
+
+  DBFLUTE_CLIENT: {postgresql}
+    database  = postgresql (PostgreSQL 9.1.7)
+    language  = java
+    container = seasar
+    package   = com.mssoftech.dbflute
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver
+    url    = jdbc:postgresql://localhost:5432/frams
+    schema = {frams.public as main}
+    user   = test
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = dbflute1.1
+_/_/_/_/_/_/_/_/_/_/ {JDBC}
+2014-10-12 05:49:42,432 [main] INFO  (TorqueDataModelTask#begin():109) - +------------------------------------------+
+2014-10-12 05:49:42,436 [main] INFO  (TorqueDataModelTask#begin():110) - |                                          |
+2014-10-12 05:49:42,436 [main] INFO  (TorqueDataModelTask#begin():111) - |                 Generate                 |
+2014-10-12 05:49:42,437 [main] INFO  (TorqueDataModelTask#begin():112) - |                                          |
+2014-10-12 05:49:42,437 [main] INFO  (TorqueDataModelTask#begin():113) - +------------------------------------------+
+2014-10-12 05:49:42,463 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2014-10-12 05:49:42,464 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2014-10-12 05:49:42,464 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://localhost:5432/frams
+2014-10-12 05:49:42,465 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = test
+2014-10-12 05:49:42,493 [main] INFO  (TorqueDataModelTask#setupControlTemplate():164) - 
+2014-10-12 05:49:42,495 [main] INFO  (TorqueDataModelTask#setupControlTemplate():165) - ...Using Java control: om/ControlGenerateJava.vm
+2014-10-12 05:49:42,677 [main] INFO  (DTDResolver#resolveEntity():197) - ...Resolving XML by database.dtd in same package
+2014-10-12 05:49:42,749 [main] INFO  (DfAbstractTexenTask#fireVelocityProcess():255) - generator.parse("om/ControlGenerateJava.vm", c);
+2014-10-12 05:49:42,854 [main] INFO  (Database#doEnableGenerateOutputDirectory():1148) - ...Setting up generateOutputDirectory: ../src/main/java
+2014-10-12 05:49:42,861 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():62) - /=======================================
+2014-10-12 05:49:42,862 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():63) - ...Initializing additional primary keys.
+2014-10-12 05:49:42,873 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():88) - ==========/
+2014-10-12 05:49:42,875 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():62) - /=======================================
+2014-10-12 05:49:42,875 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():63) - ...Initializing additional unique keys.
+2014-10-12 05:49:42,879 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():83) - ==========/
+2014-10-12 05:49:42,881 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():68) - /=======================================
+2014-10-12 05:49:42,882 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():69) - ...Initializing additional foreign keys.
+2014-10-12 05:49:42,895 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():86) - ==========/
+2014-10-12 05:49:42,921 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():59) - /=============================
+2014-10-12 05:49:42,922 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():60) - ...Initializing include query.
+2014-10-12 05:49:42,922 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - String
+2014-10-12 05:49:42,922 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - Number
+2014-10-12 05:49:42,923 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - Date
+2014-10-12 05:49:42,923 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():88) -   NotEqual -> []
+2014-10-12 05:49:42,924 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():88) -   InScope -> []
+2014-10-12 05:49:42,924 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():88) -   NotInScope -> []
+2014-10-12 05:49:42,924 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - OrderBy
+2014-10-12 05:49:42,925 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():62) - ========/
+2014-10-12 05:49:42,978 [main] INFO  (Database#info():2629) - public void parseAllCommon() {
+2014-10-12 05:49:42,982 [main] INFO  (Database#info():2629) -     parse('DBCurrent');
+2014-10-12 05:49:43,002 [main] INFO  (Database#info():2629) -     parse('DBFluteConfig');
+2014-10-12 05:49:43,056 [main] INFO  (Database#info():2629) -     parse('DBFluteInitializer');
+2014-10-12 05:49:43,082 [main] INFO  (Database#info():2629) -     parse('DBMetaInstanceHandler');
+2014-10-12 05:49:43,113 [main] INFO  (Database#info():2629) -     parse('EntityDefinedCommonColumn');
+2014-10-12 05:49:43,131 [main] INFO  (Database#info():2629) -     parse('ImplementedBehaviorSelector');
+2014-10-12 05:49:43,146 [main] INFO  (Database#info():2629) -     parse('ImplementedCommonColumnAutoSetupper');
+2014-10-12 05:49:43,163 [main] INFO  (Database#info():2629) -     parse('ImplementedInvokerAssistant');
+2014-10-12 05:49:43,170 [main] INFO  (Database#info():2629) -     parse('ImplementedSqlClauseCreator');
+2014-10-12 05:49:43,174 [main] INFO  (Database#info():2629) - }
+2014-10-12 05:49:43,175 [main] INFO  (Database#info():2629) - public void parseContainerConfig() {
+2014-10-12 05:49:43,176 [main] INFO  (Database#info():2629) -     parse('../resources/dbflute.dicon')
+2014-10-12 05:49:43,207 [main] INFO  (Database#info():2629) - }
+2014-10-12 05:49:43,215 [main] INFO  (DfOldClassHandler#info():1040) - public void deleteOldTableClass() {
+2014-10-12 05:49:43,258 [main] INFO  (DfOldClassHandler#info():1040) - }
+2014-10-12 05:49:43,260 [main] INFO  (Database#info():2629) - public void parseTableClass() {
+2014-10-12 05:49:43,261 [main] INFO  (Database#info():2629) -     parse('acct_code');
+2014-10-12 05:49:43,565 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():53) - ...Loading sequence informations
+2014-10-12 05:49:43,571 [main] INFO  (DfSequenceExtractorBase#selectStringList():75) - select * from information_schema.sequences where sequence_schema in ('public')
+2014-10-12 05:49:43,594 [main] INFO  (DfDataSourceHandler#createConnection():168) - ...Connecting to database by data source:
+2014-10-12 05:49:43,733 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():235) -   product = PostgreSQL 9.1.7
+2014-10-12 05:49:43,734 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():236) -   driver  = PostgreSQL Native Driver PostgreSQL 8.4 JDBC3 (build 701) for JDBC 3.0
+2014-10-12 05:49:43,756 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():77) - ...Connecting to the schema
+2014-10-12 05:49:43,757 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():78) - set search_path to public
+2014-10-12 05:49:43,794 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():99) - 
+[SEQUENCE]
+ frams.public.login_id_seq = frams.public.login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_id_seq = frams.public.company_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.auth_login_id_seq = frams.public.auth_login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.acct_code_id_seq = frams.public.acct_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sub_code_id_seq = frams.public.sub_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.bal_start_id_seq = frams.public.bal_start_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sys_table_id_seq = frams.public.sys_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.user_table_id_seq = frams.public.user_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_id_seq = frams.public.journal_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.session_id_seq = frams.public.session_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_fy_id_seq = frams.public.company_fy_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_wk_id_seq = frams.public.journal_wk_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.template_id_seq = frams.public.template_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.temp_item_id_seq = frams.public.temp_item_id_seq:{1 to 9223372036854775807, increment 1}
+2014-10-12 05:49:44,095 [main] INFO  (Database#info():2629) -     parse('auth_login');
+2014-10-12 05:49:44,333 [main] INFO  (Database#info():2629) -     parse('bal_start');
+2014-10-12 05:49:44,571 [main] INFO  (Database#info():2629) -     parse('company');
+2014-10-12 05:49:44,846 [main] INFO  (Database#info():2629) -     parse('company_fy');
+2014-10-12 05:49:45,007 [main] INFO  (Database#info():2629) -     parse('journal');
+2014-10-12 05:49:45,164 [main] INFO  (Database#info():2629) -     parse('journal_wk');
+2014-10-12 05:49:45,297 [main] INFO  (Database#info():2629) -     parse('login');
+2014-10-12 05:49:45,433 [main] INFO  (Database#info():2629) -     parse('session');
+2014-10-12 05:49:45,593 [main] INFO  (Database#info():2629) -     parse('sub_code');
+2014-10-12 05:49:45,764 [main] INFO  (Database#info():2629) -     parse('sys_table');
+2014-10-12 05:49:45,885 [main] INFO  (Database#info():2629) -     parse('temp_item');
+2014-10-12 05:49:46,054 [main] INFO  (Database#info():2629) -     parse('template');
+2014-10-12 05:49:46,182 [main] INFO  (Database#info():2629) -     parse('user_table');
+2014-10-12 05:49:46,299 [main] INFO  (Database#info():2629) - }
+2014-10-12 05:49:46,299 [main] INFO  (Database#info():2629) -  
+2014-10-12 05:49:46,811 [main] INFO  (DfRefreshResourceProcess#refreshResources():63) - ...Refreshing: [dbflute1.1]
+2014-10-12 05:49:47,819 [main] INFO  (DfRefreshResourceProcess#refreshResources():68) - Look! Read the message below.
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Failed to refresh the resources.
+
+[Project List]
+[dbflute1.1]
+
+[Request URL]
+http://localhost:8386/
+
+[IOExpception]
+ConnectException
+Connection refused: connect
+* * * * * * * * * */
+2014-10-12 05:49:47,822 [main] INFO  (DfDataSourceHandler#destroy():121) - ...closeReally()
+2014-10-12 05:49:47,831 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():150) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m05s413ms
+
+  DBFLUTE_CLIENT: {postgresql}
+    database  = postgresql (PostgreSQL 9.1.7)
+    language  = java
+    container = seasar
+    package   = com.mssoftech.dbflute
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver
+    url    = jdbc:postgresql://localhost:5432/frams
+    schema = {frams.public as main}
+    user   = test
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = dbflute1.1
+_/_/_/_/_/_/_/_/_/_/ {Generate}
+2014-10-12 05:50:00,446 [main] INFO  (TorqueDocumentationTask#begin():175) - +------------------------------------------+
+2014-10-12 05:50:00,450 [main] INFO  (TorqueDocumentationTask#begin():176) - |                                          |
+2014-10-12 05:50:00,451 [main] INFO  (TorqueDocumentationTask#begin():177) - |                   Doc                    |
+2014-10-12 05:50:00,451 [main] INFO  (TorqueDocumentationTask#begin():185) - |                                          |
+2014-10-12 05:50:00,452 [main] INFO  (TorqueDocumentationTask#begin():186) - +------------------------------------------+
+2014-10-12 05:50:00,479 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2014-10-12 05:50:00,480 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2014-10-12 05:50:00,480 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://localhost:5432/frams
+2014-10-12 05:50:00,481 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = test
+2014-10-12 05:50:00,486 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():246) - 
+2014-10-12 05:50:00,487 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():247) - * * * * * * * * * * *
+2014-10-12 05:50:00,488 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():248) - *                   *
+2014-10-12 05:50:00,488 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():249) - *    Schema HTML    *
+2014-10-12 05:50:00,489 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():250) - *                   *
+2014-10-12 05:50:00,489 [main] INFO  (TorqueDocumentationTask#processSchemaHtml():251) - * * * * * * * * * * *
+2014-10-12 05:50:00,696 [main] INFO  (DTDResolver#resolveEntity():197) - ...Resolving XML by database.dtd in same package
+2014-10-12 05:50:00,799 [main] INFO  (DfAbstractTexenTask#fireVelocityProcess():255) - generator.parse("doc/ControlDocument.vm", c);
+2014-10-12 05:50:00,871 [main] INFO  (Database#doEnableDocumentOutputDirectory():1180) - ...Setting up documentOutputDirectory: ./output/doc
+2014-10-12 05:50:00,880 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():62) - /=======================================
+2014-10-12 05:50:00,881 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():63) - ...Initializing additional primary keys.
+2014-10-12 05:50:00,883 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():88) - ==========/
+2014-10-12 05:50:00,884 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():62) - /=======================================
+2014-10-12 05:50:00,885 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():63) - ...Initializing additional unique keys.
+2014-10-12 05:50:00,886 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():83) - ==========/
+2014-10-12 05:50:00,888 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():68) - /=======================================
+2014-10-12 05:50:00,889 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():69) - ...Initializing additional foreign keys.
+2014-10-12 05:50:00,891 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():86) - ==========/
+2014-10-12 05:50:00,901 [main] INFO  (DfDocumentSelector#doLoadSchemaHistory():150) - ...Loading schema history
+2014-10-12 05:50:00,948 [main] INFO  (DfDocumentSelector#doLoadSchemaHistory():154) -  -> found history: count=1
+2014-10-12 05:50:01,070 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():53) - ...Loading sequence informations
+2014-10-12 05:50:01,073 [main] INFO  (DfSequenceExtractorBase#selectStringList():75) - select * from information_schema.sequences where sequence_schema in ('public')
+2014-10-12 05:50:01,080 [main] INFO  (DfDataSourceHandler#createConnection():168) - ...Connecting to database by data source:
+2014-10-12 05:50:01,185 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():235) -   product = PostgreSQL 9.1.7
+2014-10-12 05:50:01,186 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():236) -   driver  = PostgreSQL Native Driver PostgreSQL 8.4 JDBC3 (build 701) for JDBC 3.0
+2014-10-12 05:50:01,199 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():77) - ...Connecting to the schema
+2014-10-12 05:50:01,200 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():78) - set search_path to public
+2014-10-12 05:50:01,233 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():99) - 
+[SEQUENCE]
+ frams.public.login_id_seq = frams.public.login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_id_seq = frams.public.company_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.auth_login_id_seq = frams.public.auth_login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.acct_code_id_seq = frams.public.acct_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sub_code_id_seq = frams.public.sub_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.bal_start_id_seq = frams.public.bal_start_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sys_table_id_seq = frams.public.sys_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.user_table_id_seq = frams.public.user_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_id_seq = frams.public.journal_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.session_id_seq = frams.public.session_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_fy_id_seq = frams.public.company_fy_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_wk_id_seq = frams.public.journal_wk_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.template_id_seq = frams.public.template_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.temp_item_id_seq = frams.public.temp_item_id_seq:{1 to 9223372036854775807, increment 1}
+2014-10-12 05:50:01,597 [main] INFO  (DfRefreshResourceProcess#refreshResources():63) - ...Refreshing: [dbflute1.1]
+2014-10-12 05:50:02,604 [main] INFO  (DfRefreshResourceProcess#refreshResources():68) - Look! Read the message below.
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Failed to refresh the resources.
+
+[Project List]
+[dbflute1.1]
+
+[Request URL]
+http://localhost:8386/
+
+[IOExpception]
+ConnectException
+Connection refused: connect
+* * * * * * * * * */
+2014-10-12 05:50:02,606 [main] INFO  (DfDataSourceHandler#destroy():121) - ...closeReally()
+2014-10-12 05:50:02,609 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():150) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m02s181ms
+
+  DBFLUTE_CLIENT: {postgresql}
+    database  = postgresql (PostgreSQL 9.1.7)
+    language  = java
+    container = seasar
+    package   = com.mssoftech.dbflute
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver
+    url    = jdbc:postgresql://localhost:5432/frams
+    schema = {frams.public as main}
+    user   = test
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = dbflute1.1
+_/_/_/_/_/_/_/_/_/_/ {Doc}
+2014-10-12 18:45:58,013 [main] INFO  (TorqueDataModelTask#begin():109) - +------------------------------------------+
+2014-10-12 18:45:58,017 [main] INFO  (TorqueDataModelTask#begin():110) - |                                          |
+2014-10-12 18:45:58,019 [main] INFO  (TorqueDataModelTask#begin():111) - |                 Generate                 |
+2014-10-12 18:45:58,020 [main] INFO  (TorqueDataModelTask#begin():112) - |                                          |
+2014-10-12 18:45:58,020 [main] INFO  (TorqueDataModelTask#begin():113) - +------------------------------------------+
+2014-10-12 18:45:58,045 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2014-10-12 18:45:58,046 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2014-10-12 18:45:58,046 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://localhost:5432/frams
+2014-10-12 18:45:58,047 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = test
+2014-10-12 18:45:58,069 [main] INFO  (TorqueDataModelTask#setupControlTemplate():164) - 
+2014-10-12 18:45:58,070 [main] INFO  (TorqueDataModelTask#setupControlTemplate():165) - ...Using Java control: om/ControlGenerateJava.vm
+2014-10-12 18:45:58,238 [main] INFO  (DTDResolver#resolveEntity():197) - ...Resolving XML by database.dtd in same package
+2014-10-12 18:45:58,312 [main] INFO  (DfAbstractTexenTask#fireVelocityProcess():255) - generator.parse("om/ControlGenerateJava.vm", c);
+2014-10-12 18:45:58,436 [main] INFO  (Database#doEnableGenerateOutputDirectory():1148) - ...Setting up generateOutputDirectory: ../src/main/java
+2014-10-12 18:45:58,441 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():62) - /=======================================
+2014-10-12 18:45:58,442 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():63) - ...Initializing additional primary keys.
+2014-10-12 18:45:58,444 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():88) - ==========/
+2014-10-12 18:45:58,445 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():62) - /=======================================
+2014-10-12 18:45:58,446 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():63) - ...Initializing additional unique keys.
+2014-10-12 18:45:58,447 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():83) - ==========/
+2014-10-12 18:45:58,450 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():68) - /=======================================
+2014-10-12 18:45:58,450 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():69) - ...Initializing additional foreign keys.
+2014-10-12 18:45:58,452 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():86) - ==========/
+2014-10-12 18:45:58,468 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():59) - /=============================
+2014-10-12 18:45:58,468 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():60) - ...Initializing include query.
+2014-10-12 18:45:58,469 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - String
+2014-10-12 18:45:58,469 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - Number
+2014-10-12 18:45:58,470 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - Date
+2014-10-12 18:45:58,470 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():88) -   NotEqual -> []
+2014-10-12 18:45:58,470 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():88) -   InScope -> []
+2014-10-12 18:45:58,471 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():88) -   NotInScope -> []
+2014-10-12 18:45:58,471 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - OrderBy
+2014-10-12 18:45:58,472 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():62) - ========/
+2014-10-12 18:45:58,494 [main] INFO  (Database#info():2629) - public void parseAllCommon() {
+2014-10-12 18:45:58,496 [main] INFO  (Database#info():2629) -     parse('DBCurrent');
+2014-10-12 18:45:58,501 [main] INFO  (Database#info():2629) -     parse('DBFluteConfig');
+2014-10-12 18:45:58,518 [main] INFO  (Database#info():2629) -     parse('DBFluteInitializer');
+2014-10-12 18:45:58,524 [main] INFO  (Database#info():2629) -     parse('DBMetaInstanceHandler');
+2014-10-12 18:45:58,550 [main] INFO  (Database#info():2629) -     parse('EntityDefinedCommonColumn');
+2014-10-12 18:45:58,564 [main] INFO  (Database#info():2629) -     parse('ImplementedBehaviorSelector');
+2014-10-12 18:45:58,568 [main] INFO  (Database#info():2629) -     parse('ImplementedCommonColumnAutoSetupper');
+2014-10-12 18:45:58,577 [main] INFO  (Database#info():2629) -     parse('ImplementedInvokerAssistant');
+2014-10-12 18:45:58,581 [main] INFO  (Database#info():2629) -     parse('ImplementedSqlClauseCreator');
+2014-10-12 18:45:58,583 [main] INFO  (Database#info():2629) - }
+2014-10-12 18:45:58,584 [main] INFO  (Database#info():2629) - public void parseContainerConfig() {
+2014-10-12 18:45:58,584 [main] INFO  (Database#info():2629) -     parse('../resources/dbflute.dicon')
+2014-10-12 18:45:58,628 [main] INFO  (Database#info():2629) - }
+2014-10-12 18:45:58,637 [main] INFO  (DfOldClassHandler#info():1040) - public void deleteOldTableClass() {
+2014-10-12 18:45:58,690 [main] INFO  (DfOldClassHandler#info():1040) - }
+2014-10-12 18:45:58,691 [main] INFO  (Database#info():2629) - public void parseTableClass() {
+2014-10-12 18:45:58,692 [main] INFO  (Database#info():2629) -     parse('acct_code');
+2014-10-12 18:45:58,890 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():53) - ...Loading sequence informations
+2014-10-12 18:45:58,892 [main] INFO  (DfSequenceExtractorBase#selectStringList():75) - select * from information_schema.sequences where sequence_schema in ('public')
+2014-10-12 18:45:58,906 [main] INFO  (DfDataSourceHandler#createConnection():168) - ...Connecting to database by data source:
+2014-10-12 18:45:59,023 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():235) -   product = PostgreSQL 9.1.7
+2014-10-12 18:45:59,024 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():236) -   driver  = PostgreSQL Native Driver PostgreSQL 8.4 JDBC3 (build 701) for JDBC 3.0
+2014-10-12 18:45:59,041 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():77) - ...Connecting to the schema
+2014-10-12 18:45:59,042 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():78) - set search_path to public
+2014-10-12 18:45:59,082 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():99) - 
+[SEQUENCE]
+ frams.public.login_id_seq = frams.public.login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_id_seq = frams.public.company_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.auth_login_id_seq = frams.public.auth_login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.acct_code_id_seq = frams.public.acct_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sub_code_id_seq = frams.public.sub_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.bal_start_id_seq = frams.public.bal_start_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sys_table_id_seq = frams.public.sys_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.user_table_id_seq = frams.public.user_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_id_seq = frams.public.journal_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.session_id_seq = frams.public.session_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_fy_id_seq = frams.public.company_fy_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_wk_id_seq = frams.public.journal_wk_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.template_id_seq = frams.public.template_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.temp_item_id_seq = frams.public.temp_item_id_seq:{1 to 9223372036854775807, increment 1}
+2014-10-12 18:45:59,288 [main] INFO  (Database#info():2629) -     parse('auth_login');
+2014-10-12 18:45:59,485 [main] INFO  (Database#info():2629) -     parse('bal_start');
+2014-10-12 18:45:59,714 [main] INFO  (Database#info():2629) -     parse('company');
+2014-10-12 18:45:59,946 [main] INFO  (Database#info():2629) -     parse('company_fy');
+2014-10-12 18:46:00,085 [main] INFO  (Database#info():2629) -     parse('journal');
+2014-10-12 18:46:00,277 [main] INFO  (Database#info():2629) -     parse('journal_wk');
+2014-10-12 18:46:00,452 [main] INFO  (Database#info():2629) -     parse('login');
+2014-10-12 18:46:00,627 [main] INFO  (Database#info():2629) -     parse('session');
+2014-10-12 18:46:00,760 [main] INFO  (Database#info():2629) -     parse('sub_code');
+2014-10-12 18:46:00,945 [main] INFO  (Database#info():2629) -     parse('sys_table');
+2014-10-12 18:46:01,072 [main] INFO  (Database#info():2629) -     parse('temp_item');
+2014-10-12 18:46:01,254 [main] INFO  (Database#info():2629) -     parse('template');
+2014-10-12 18:46:01,402 [main] INFO  (Database#info():2629) -     parse('user_table');
+2014-10-12 18:46:01,589 [main] INFO  (Database#info():2629) - }
+2014-10-12 18:46:01,590 [main] INFO  (Database#info():2629) -  
+2014-10-12 18:46:01,763 [main] INFO  (DfRefreshResourceProcess#refreshResources():63) - ...Refreshing: [dbflute1.1]
+2014-10-12 18:46:02,773 [main] INFO  (DfRefreshResourceProcess#refreshResources():68) - Look! Read the message below.
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Failed to refresh the resources.
+
+[Project List]
+[dbflute1.1]
+
+[Request URL]
+http://localhost:8386/
+
+[IOExpception]
+ConnectException
+Connection refused: connect
+* * * * * * * * * */
+2014-10-12 18:46:02,776 [main] INFO  (DfDataSourceHandler#destroy():121) - ...closeReally()
+2014-10-12 18:46:02,781 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():150) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m04s785ms
+
+  DBFLUTE_CLIENT: {postgresql}
+    database  = postgresql (PostgreSQL 9.1.7)
+    language  = java
+    container = seasar
+    package   = com.mssoftech.dbflute
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver
+    url    = jdbc:postgresql://localhost:5432/frams
+    schema = {frams.public as main}
+    user   = test
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = dbflute1.1
+_/_/_/_/_/_/_/_/_/_/ {Generate}
+2014-10-12 18:49:27,385 [main] INFO  (TorqueDataModelTask#begin():109) - +------------------------------------------+
+2014-10-12 18:49:27,389 [main] INFO  (TorqueDataModelTask#begin():110) - |                                          |
+2014-10-12 18:49:27,390 [main] INFO  (TorqueDataModelTask#begin():111) - |                 Generate                 |
+2014-10-12 18:49:27,390 [main] INFO  (TorqueDataModelTask#begin():112) - |                                          |
+2014-10-12 18:49:27,391 [main] INFO  (TorqueDataModelTask#begin():113) - +------------------------------------------+
+2014-10-12 18:49:27,417 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2014-10-12 18:49:27,418 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2014-10-12 18:49:27,418 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://localhost:5432/frams
+2014-10-12 18:49:27,419 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = test
+2014-10-12 18:49:27,442 [main] INFO  (TorqueDataModelTask#setupControlTemplate():164) - 
+2014-10-12 18:49:27,443 [main] INFO  (TorqueDataModelTask#setupControlTemplate():165) - ...Using Java control: om/ControlGenerateJava.vm
+2014-10-12 18:49:27,614 [main] INFO  (DTDResolver#resolveEntity():197) - ...Resolving XML by database.dtd in same package
+2014-10-12 18:49:27,692 [main] INFO  (DfAbstractTexenTask#fireVelocityProcess():255) - generator.parse("om/ControlGenerateJava.vm", c);
+2014-10-12 18:49:27,794 [main] INFO  (Database#doEnableGenerateOutputDirectory():1148) - ...Setting up generateOutputDirectory: ../src/main/java
+2014-10-12 18:49:27,799 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():62) - /=======================================
+2014-10-12 18:49:27,799 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():63) - ...Initializing additional primary keys.
+2014-10-12 18:49:27,801 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():88) - ==========/
+2014-10-12 18:49:27,803 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():62) - /=======================================
+2014-10-12 18:49:27,803 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():63) - ...Initializing additional unique keys.
+2014-10-12 18:49:27,805 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():83) - ==========/
+2014-10-12 18:49:27,807 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():68) - /=======================================
+2014-10-12 18:49:27,808 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():69) - ...Initializing additional foreign keys.
+2014-10-12 18:49:27,810 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():86) - ==========/
+2014-10-12 18:49:27,826 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():59) - /=============================
+2014-10-12 18:49:27,826 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():60) - ...Initializing include query.
+2014-10-12 18:49:27,827 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - String
+2014-10-12 18:49:27,827 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - Number
+2014-10-12 18:49:27,827 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - Date
+2014-10-12 18:49:27,828 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():88) -   NotEqual -> []
+2014-10-12 18:49:27,828 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():88) -   InScope -> []
+2014-10-12 18:49:27,829 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():88) -   NotInScope -> []
+2014-10-12 18:49:27,831 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():83) - OrderBy
+2014-10-12 18:49:27,831 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():62) - ========/
+2014-10-12 18:49:27,849 [main] INFO  (Database#info():2629) - public void parseAllCommon() {
+2014-10-12 18:49:27,851 [main] INFO  (Database#info():2629) -     parse('DBCurrent');
+2014-10-12 18:49:27,856 [main] INFO  (Database#info():2629) -     parse('DBFluteConfig');
+2014-10-12 18:49:27,877 [main] INFO  (Database#info():2629) -     parse('DBFluteInitializer');
+2014-10-12 18:49:27,882 [main] INFO  (Database#info():2629) -     parse('DBMetaInstanceHandler');
+2014-10-12 18:49:27,910 [main] INFO  (Database#info():2629) -     parse('EntityDefinedCommonColumn');
+2014-10-12 18:49:27,923 [main] INFO  (Database#info():2629) -     parse('ImplementedBehaviorSelector');
+2014-10-12 18:49:27,927 [main] INFO  (Database#info():2629) -     parse('ImplementedCommonColumnAutoSetupper');
+2014-10-12 18:49:27,935 [main] INFO  (Database#info():2629) -     parse('ImplementedInvokerAssistant');
+2014-10-12 18:49:27,945 [main] INFO  (Database#info():2629) -     parse('ImplementedSqlClauseCreator');
+2014-10-12 18:49:27,951 [main] INFO  (Database#info():2629) - }
+2014-10-12 18:49:27,952 [main] INFO  (Database#info():2629) - public void parseContainerConfig() {
+2014-10-12 18:49:27,953 [main] INFO  (Database#info():2629) -     parse('../resources/dbflute.dicon')
+2014-10-12 18:49:27,964 [main] INFO  (Database#info():2629) - }
+2014-10-12 18:49:27,973 [main] INFO  (DfOldClassHandler#info():1040) - public void deleteOldTableClass() {
+2014-10-12 18:49:28,022 [main] INFO  (DfOldClassHandler#info():1040) - }
+2014-10-12 18:49:28,023 [main] INFO  (Database#info():2629) - public void parseTableClass() {
+2014-10-12 18:49:28,024 [main] INFO  (Database#info():2629) -     parse('acct_code');
+2014-10-12 18:49:28,222 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():53) - ...Loading sequence informations
+2014-10-12 18:49:28,225 [main] INFO  (DfSequenceExtractorBase#selectStringList():75) - select * from information_schema.sequences where sequence_schema in ('public')
+2014-10-12 18:49:28,239 [main] INFO  (DfDataSourceHandler#createConnection():168) - ...Connecting to database by data source:
+2014-10-12 18:49:28,381 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():235) -   product = PostgreSQL 9.1.7
+2014-10-12 18:49:28,382 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():236) -   driver  = PostgreSQL Native Driver PostgreSQL 8.4 JDBC3 (build 701) for JDBC 3.0
+2014-10-12 18:49:28,402 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():77) - ...Connecting to the schema
+2014-10-12 18:49:28,404 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():78) - set search_path to public
+2014-10-12 18:49:28,446 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():99) - 
+[SEQUENCE]
+ frams.public.login_id_seq = frams.public.login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_id_seq = frams.public.company_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.auth_login_id_seq = frams.public.auth_login_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.acct_code_id_seq = frams.public.acct_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sub_code_id_seq = frams.public.sub_code_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.bal_start_id_seq = frams.public.bal_start_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.sys_table_id_seq = frams.public.sys_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.user_table_id_seq = frams.public.user_table_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_id_seq = frams.public.journal_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.session_id_seq = frams.public.session_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.company_fy_id_seq = frams.public.company_fy_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.journal_wk_id_seq = frams.public.journal_wk_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.template_id_seq = frams.public.template_id_seq:{1 to 9223372036854775807, increment 1}
+ frams.public.temp_item_id_seq = frams.public.temp_item_id_seq:{1 to 9223372036854775807, increment 1}
+2014-10-12 18:49:28,642 [main] INFO  (Database#info():2629) -     parse('auth_login');
+2014-10-12 18:49:28,834 [main] INFO  (Database#info():2629) -     parse('bal_start');
+2014-10-12 18:49:29,056 [main] INFO  (Database#info():2629) -     parse('company');
+2014-10-12 18:49:29,300 [main] INFO  (Database#info():2629) -     parse('company_fy');
+2014-10-12 18:49:29,424 [main] INFO  (Database#info():2629) -     parse('journal');
+2014-10-12 18:49:29,579 [main] INFO  (Database#info():2629) -     parse('journal_wk');
+2014-10-12 18:49:29,725 [main] INFO  (Database#info():2629) -     parse('login');
+2014-10-12 18:49:29,867 [main] INFO  (Database#info():2629) -     parse('session');
+2014-10-12 18:49:29,982 [main] INFO  (Database#info():2629) -     parse('sub_code');
+2014-10-12 18:49:30,134 [main] INFO  (Database#info():2629) -     parse('sys_table');
+2014-10-12 18:49:30,254 [main] INFO  (Database#info():2629) -     parse('temp_item');
+2014-10-12 18:49:30,400 [main] INFO  (Database#info():2629) -     parse('template');
+2014-10-12 18:49:30,520 [main] INFO  (Database#info():2629) -     parse('user_table');
+2014-10-12 18:49:30,635 [main] INFO  (Database#info():2629) - }
+2014-10-12 18:49:30,636 [main] INFO  (Database#info():2629) -  
+2014-10-12 18:49:30,661 [main] INFO  (DfRefreshResourceProcess#refreshResources():63) - ...Refreshing: [dbflute1.1]
+2014-10-12 18:49:31,670 [main] INFO  (DfRefreshResourceProcess#refreshResources():68) - Look! Read the message below.
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Failed to refresh the resources.
+
+[Project List]
+[dbflute1.1]
+
+[Request URL]
+http://localhost:8386/
+
+[IOExpception]
+ConnectException
+Connection refused: connect
+* * * * * * * * * */
+2014-10-12 18:49:31,673 [main] INFO  (DfDataSourceHandler#destroy():121) - ...closeReally()
+2014-10-12 18:49:31,677 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():150) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m04s310ms
+
+  DBFLUTE_CLIENT: {postgresql}
+    database  = postgresql (PostgreSQL 9.1.7)
+    language  = java
+    container = seasar
+    package   = com.mssoftech.dbflute
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver
+    url    = jdbc:postgresql://localhost:5432/frams
+    schema = {frams.public as main}
+    user   = test
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = dbflute1.1
+_/_/_/_/_/_/_/_/_/_/ {Generate}
+2015-07-02 20:34:09,571 [main] INFO  (TorqueJDBCTransformTask#begin():104) - +------------------------------------------+
+2015-07-02 20:34:09,576 [main] INFO  (TorqueJDBCTransformTask#begin():105) - |                                          |
+2015-07-02 20:34:09,577 [main] INFO  (TorqueJDBCTransformTask#begin():106) - |                   JDBC                   |
+2015-07-02 20:34:09,577 [main] INFO  (TorqueJDBCTransformTask#begin():107) - |                                          |
+2015-07-02 20:34:09,578 [main] INFO  (TorqueJDBCTransformTask#begin():108) - +------------------------------------------+
+2015-07-02 20:34:09,613 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2015-07-02 20:34:09,614 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2015-07-02 20:34:09,616 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://localhost:5432/godbfexam
+2015-07-02 20:34:09,616 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = test
+2015-07-02 20:34:09,673 [main] INFO  (DfSchemaXmlSerializer#serialize():285) - 
+2015-07-02 20:34:09,674 [main] INFO  (DfSchemaXmlSerializer#serialize():286) - ...Starting to process JDBC to SchemaXML
+2015-07-02 20:34:09,675 [main] INFO  (DfSchemaXmlSerializer#doLoadPreviousSchema():1460) - ...Loading previous schema (schema diff process)
+2015-07-02 20:34:09,685 [main] INFO  (DTDResolver#resolveEntity():201) - ...Resolving XML by 'http://dbflute.sandbox.seasar.org/meta/database.dtd'
+2015-07-02 20:34:10,212 [main] INFO  (DfSchemaXmlSerializer#generateXML():359) - ...Getting DB connection
+2015-07-02 20:34:10,226 [main] INFO  (DfDataSourceHandler#createConnection():166) - ...Connecting to database by data source:
+2015-07-02 20:34:10,386 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():233) -   product = PostgreSQL 9.1.7
+2015-07-02 20:34:10,387 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():234) -   driver  = PostgreSQL Native Driver PostgreSQL 9.3 JDBC4.1 (build 1102) for JDBC 4.0
+2015-07-02 20:34:10,406 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():77) - ...Connecting to the schema
+2015-07-02 20:34:10,406 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():78) - set search_path to public
+2015-07-02 20:34:10,410 [main] INFO  (DfSchemaXmlSerializer#generateXML():362) - ...Getting DB meta data
+2015-07-02 20:34:10,413 [main] INFO  (DfTableExtractor#doGetTableList():66) - ...Getting tables:
+2015-07-02 20:34:10,413 [main] INFO  (DfTableExtractor#doGetTableList():67) -   schema = {godbfexam.public as main}
+2015-07-02 20:34:10,414 [main] INFO  (DfTableExtractor#doGetTableList():68) -   types  = [TABLE, VIEW]
+2015-07-02 20:34:10,454 [main] INFO  (DfSchemaXmlSerializer#processTable():419) - 
+2015-07-02 20:34:10,455 [main] INFO  (DfSchemaXmlSerializer#processTable():420) - $ /= = = = = = = = = = = = = = = = = = = = = = = = = =
+2015-07-02 20:34:10,455 [main] INFO  (DfSchemaXmlSerializer#processTable():421) - $ [Table List]
+2015-07-02 20:34:10,455 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():501) - $ godbfexam.public.customer(TABLE)
+2015-07-02 20:34:10,638 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():501) - $ godbfexam.public.employee(TABLE)
+2015-07-02 20:34:10,741 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():501) - $ godbfexam.public.login(TABLE)
+2015-07-02 20:34:10,815 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():501) - $ godbfexam.public.product(TABLE)
+2015-07-02 20:34:10,892 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():501) - $ godbfexam.public.sales_slip(TABLE)
+2015-07-02 20:34:10,984 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():501) - $ godbfexam.public.session(TABLE)
+2015-07-02 20:34:11,044 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():501) - $ godbfexam.public.stock(TABLE)
+2015-07-02 20:34:11,107 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():501) - $ godbfexam.public.sys_table(TABLE)
+2015-07-02 20:34:11,171 [main] INFO  (DfSchemaXmlSerializer#doProcessTable():501) - $ godbfexam.public.user_table(TABLE)
+2015-07-02 20:34:11,268 [main] INFO  (DfSchemaXmlSerializer#processTable():433) - $ 
+2015-07-02 20:34:11,268 [main] INFO  (DfSchemaXmlSerializer#processTable():434) - $ [Table Count]
+2015-07-02 20:34:11,269 [main] INFO  (DfSchemaXmlSerializer#processTable():435) - $ 9
+2015-07-02 20:34:11,269 [main] INFO  (DfSchemaXmlSerializer#processTable():436) - $ = = = = = = = = = =/
+2015-07-02 20:34:11,270 [main] INFO  (DfSchemaXmlSerializer#processTable():437) - 
+2015-07-02 20:34:11,272 [main] INFO  (DfSchemaXmlSerializer#processSequence():796) - ...Getting sequences
+2015-07-02 20:34:11,278 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():53) - ...Loading sequence informations
+2015-07-02 20:34:11,282 [main] INFO  (DfSequenceExtractorBase#selectStringList():75) - select * from information_schema.sequences where sequence_schema in ('public')
+2015-07-02 20:34:11,392 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():99) - 
+[SEQUENCE]
+ godbfexam.public.login_id_seq = godbfexam.public.login_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.session_id_seq = godbfexam.public.session_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.sys_table_id_seq = godbfexam.public.sys_table_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.product_id_seq = godbfexam.public.product_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.user_table_id_seq = godbfexam.public.user_table_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.sales_slip_id_seq = godbfexam.public.sales_slip_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.stock_id_seq = godbfexam.public.stock_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.employee_id_seq = godbfexam.public.employee_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.customer_id_seq = godbfexam.public.customer_id_seq:{1 to 9223372036854775807, increment 1}
+2015-07-02 20:34:11,395 [main] INFO  (DfSchemaXmlSerializer#processSequence():801) - ...Processing sequences: 9
+2015-07-02 20:34:11,398 [main] INFO  (DfSchemaXmlSerializer#serialize():300) - ...Serializing XML:
+2015-07-02 20:34:11,399 [main] INFO  (DfSchemaXmlSerializer#serialize():301) -   filePath = ./schema/project-schema-postgresql.xml
+2015-07-02 20:34:11,399 [main] INFO  (DfSchemaXmlSerializer#serialize():302) -   encoding = UTF-8
+2015-07-02 20:34:11,437 [main] INFO  (DfSchemaXmlSerializer#doLoadNextSchema():1478) - ...Loading next schema (schema diff process)
+2015-07-02 20:34:11,440 [main] INFO  (DTDResolver#resolveEntity():195) - ...Resolving XML by database.dtd in same package
+2015-07-02 20:34:11,502 [main] INFO  (DfSchemaXmlSerializer#doLoadNextSchema():1483) -  -> different from previous (schema diff)
+2015-07-02 20:34:11,504 [main] INFO  (DfSchemaXmlSerializer#doLoadNextSchema():1485) - ...Serializing schema-diff:
+2015-07-02 20:34:11,504 [main] INFO  (DfSchemaXmlSerializer#doLoadNextSchema():1486) -   filePath = ./schema/project-history-postgresql.diffmap
+2015-07-02 20:34:11,509 [main] INFO  (DfDataSourceHandler#destroy():120) - ...closeReally()
+2015-07-02 20:34:11,517 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():139) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m01s964ms
+
+  DBFLUTE_CLIENT: {postgresql}
+    database  = postgresql (PostgreSQL 9.1.7)
+    language  = java
+    container = guice
+    package   = dbfexample
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver
+    url    = jdbc:postgresql://localhost:5432/godbfexam
+    schema = {godbfexam.public as main}
+    user   = test
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = dbflute1.1
+_/_/_/_/_/_/_/_/_/_/ {JDBC}
+2015-07-02 20:34:54,623 [main] INFO  (TorqueDataModelTask#begin():109) - +------------------------------------------+
+2015-07-02 20:34:54,628 [main] INFO  (TorqueDataModelTask#begin():110) - |                                          |
+2015-07-02 20:34:54,629 [main] INFO  (TorqueDataModelTask#begin():111) - |                 Generate                 |
+2015-07-02 20:34:54,630 [main] INFO  (TorqueDataModelTask#begin():112) - |                                          |
+2015-07-02 20:34:54,630 [main] INFO  (TorqueDataModelTask#begin():113) - +------------------------------------------+
+2015-07-02 20:34:54,668 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2015-07-02 20:34:54,669 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2015-07-02 20:34:54,669 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://localhost:5432/godbfexam
+2015-07-02 20:34:54,670 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = test
+2015-07-02 20:34:54,700 [main] INFO  (TorqueDataModelTask#setupControlTemplate():164) - 
+2015-07-02 20:34:54,701 [main] INFO  (TorqueDataModelTask#setupControlTemplate():165) - ...Using Java control: om/ControlGenerateJava.vm
+2015-07-02 20:34:54,785 [main] INFO  (DTDResolver#resolveEntity():195) - ...Resolving XML by database.dtd in same package
+2015-07-02 20:34:54,875 [main] INFO  (DfAbstractTexenTask#fireVelocityProcess():253) - generator.parse("om/ControlGenerateJava.vm", ctx);
+2015-07-02 20:34:55,132 [main] INFO  (Database#doEnableGenerateOutputDirectory():1143) - ...Setting up generateOutputDirectory: ../src/main/java
+2015-07-02 20:34:55,139 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():62) - /=======================================
+2015-07-02 20:34:55,139 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():63) - ...Initializing additional primary keys.
+2015-07-02 20:34:55,142 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():88) - ==========/
+2015-07-02 20:34:55,144 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():62) - /=======================================
+2015-07-02 20:34:55,144 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():63) - ...Initializing additional unique keys.
+2015-07-02 20:34:55,146 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():83) - ==========/
+2015-07-02 20:34:55,148 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():68) - /=======================================
+2015-07-02 20:34:55,148 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():69) - ...Initializing additional foreign keys.
+2015-07-02 20:34:55,151 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():88) - ==========/
+2015-07-02 20:34:55,170 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():58) - /=============================
+2015-07-02 20:34:55,171 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():59) - ...Initializing include query.
+2015-07-02 20:34:55,172 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():81) - String
+2015-07-02 20:34:55,172 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():81) - Number
+2015-07-02 20:34:55,172 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():81) - Date
+2015-07-02 20:34:55,172 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():86) -   NotEqual -> []
+2015-07-02 20:34:55,173 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():86) -   InScope -> []
+2015-07-02 20:34:55,173 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():86) -   NotInScope -> []
+2015-07-02 20:34:55,173 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():81) - OrderBy
+2015-07-02 20:34:55,174 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():61) - ========/
+2015-07-02 20:34:55,199 [main] INFO  (Database#info():2696) - public void parseAllCommon() {
+2015-07-02 20:34:55,201 [main] INFO  (Database#info():2696) -     parse('DBCurrent');
+2015-07-02 20:34:55,208 [main] INFO  (Database#info():2696) -     parse('DBFluteConfig');
+2015-07-02 20:34:55,219 [main] INFO  (Database#info():2696) -     parse('DBFluteInitializer');
+2015-07-02 20:34:55,225 [main] INFO  (Database#info():2696) -     parse('DBMetaInstanceHandler');
+2015-07-02 20:34:55,270 [main] INFO  (Database#info():2696) -     parse('EntityDefinedCommonColumn');
+2015-07-02 20:34:55,285 [main] INFO  (Database#info():2696) -     parse('ImplementedBehaviorSelector');
+2015-07-02 20:34:55,290 [main] INFO  (Database#info():2696) -     parse('ImplementedCommonColumnAutoSetupper');
+2015-07-02 20:34:55,296 [main] INFO  (Database#info():2696) -     parse('ImplementedInvokerAssistant');
+2015-07-02 20:34:55,299 [main] INFO  (Database#info():2696) -     parse('ImplementedSqlClauseCreator');
+2015-07-02 20:34:55,303 [main] INFO  (Database#info():2696) - }
+2015-07-02 20:34:55,303 [main] INFO  (Database#info():2696) - public void parseContainerConfig() {
+2015-07-02 20:34:55,304 [main] INFO  (Database#info():2696) -     parse('dbfexample\allcommon\DBFluteModule.java')
+2015-07-02 20:34:55,315 [main] INFO  (Database#info():2696) - }
+2015-07-02 20:34:55,326 [main] INFO  (DfOldClassHandler#info():1033) - public void deleteOldTableClass() {
+2015-07-02 20:34:55,373 [main] INFO  (DfOldClassHandler#info():1033) - }
+2015-07-02 20:34:55,373 [main] INFO  (Database#info():2696) - public void parseTableClass() {
+2015-07-02 20:34:55,377 [main] INFO  (Database#info():2696) -     parse('customer');
+2015-07-02 20:34:55,513 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():53) - ...Loading sequence informations
+2015-07-02 20:34:55,517 [main] INFO  (DfSequenceExtractorBase#selectStringList():75) - select * from information_schema.sequences where sequence_schema in ('public')
+2015-07-02 20:34:55,535 [main] INFO  (DfDataSourceHandler#createConnection():166) - ...Connecting to database by data source:
+2015-07-02 20:34:55,805 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():233) -   product = PostgreSQL 9.1.7
+2015-07-02 20:34:55,806 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():234) -   driver  = PostgreSQL Native Driver PostgreSQL 9.3 JDBC4.1 (build 1102) for JDBC 4.0
+2015-07-02 20:34:55,841 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():77) - ...Connecting to the schema
+2015-07-02 20:34:55,841 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():78) - set search_path to public
+2015-07-02 20:34:55,883 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():99) - 
+[SEQUENCE]
+ godbfexam.public.login_id_seq = godbfexam.public.login_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.session_id_seq = godbfexam.public.session_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.sys_table_id_seq = godbfexam.public.sys_table_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.product_id_seq = godbfexam.public.product_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.user_table_id_seq = godbfexam.public.user_table_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.sales_slip_id_seq = godbfexam.public.sales_slip_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.stock_id_seq = godbfexam.public.stock_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.employee_id_seq = godbfexam.public.employee_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.customer_id_seq = godbfexam.public.customer_id_seq:{1 to 9223372036854775807, increment 1}
+2015-07-02 20:34:56,003 [main] INFO  (Database#info():2696) -     parse('employee');
+2015-07-02 20:34:56,209 [main] INFO  (Database#info():2696) -     parse('login');
+2015-07-02 20:34:56,347 [main] INFO  (Database#info():2696) -     parse('product');
+2015-07-02 20:34:56,510 [main] INFO  (Database#info():2696) -     parse('sales_slip');
+2015-07-02 20:34:56,672 [main] INFO  (Database#info():2696) -     parse('session');
+2015-07-02 20:34:56,793 [main] INFO  (Database#info():2696) -     parse('stock');
+2015-07-02 20:34:56,964 [main] INFO  (Database#info():2696) -     parse('sys_table');
+2015-07-02 20:34:57,097 [main] INFO  (Database#info():2696) -     parse('user_table');
+2015-07-02 20:34:57,235 [main] INFO  (Database#info():2696) - }
+2015-07-02 20:34:57,235 [main] INFO  (Database#info():2696) -  
+2015-07-02 20:34:57,467 [main] INFO  (DfRefreshResourceProcess#show():297) - ...Refreshing [dbflute1.1] by http://localhost:8386/
+2015-07-02 20:34:58,472 [main] INFO  (DfRefreshResourceProcess#show():297) - ...Retrying refreshing by default secondary URL http://localhost:8387/
+2015-07-02 20:34:59,469 [main] INFO  (DfRefreshResourceProcess#show():297) - Look! Read the message below.
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Failed to refresh the resources.
+
+[Project List]
+[dbflute1.1]
+
+[Request URL]
+http://localhost:8386/
+
+[IOExpception]
+ConnectException
+Connection refused: connect
+* * * * * * * * * */
+2015-07-02 20:34:59,473 [main] INFO  (DfDataSourceHandler#destroy():120) - ...closeReally()
+2015-07-02 20:34:59,480 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():139) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m04s879ms
+
+  DBFLUTE_CLIENT: {postgresql}
+    database  = postgresql (PostgreSQL 9.1.7)
+    language  = java
+    container = guice
+    package   = dbfexample
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver
+    url    = jdbc:postgresql://localhost:5432/godbfexam
+    schema = {godbfexam.public as main}
+    user   = test
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = dbflute1.1
+_/_/_/_/_/_/_/_/_/_/ {Generate}
+2015-07-03 09:18:34,000 [main] INFO  (TorqueDataModelTask#begin():109) - +------------------------------------------+
+2015-07-03 09:18:34,018 [main] INFO  (TorqueDataModelTask#begin():110) - |                                          |
+2015-07-03 09:18:34,019 [main] INFO  (TorqueDataModelTask#begin():111) - |                 Generate                 |
+2015-07-03 09:18:34,021 [main] INFO  (TorqueDataModelTask#begin():112) - |                                          |
+2015-07-03 09:18:34,024 [main] INFO  (TorqueDataModelTask#begin():113) - +------------------------------------------+
+2015-07-03 09:18:34,151 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2015-07-03 09:18:34,151 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2015-07-03 09:18:34,152 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://localhost:5432/godbfexam
+2015-07-03 09:18:34,152 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = test
+2015-07-03 09:18:34,211 [main] INFO  (TorqueDataModelTask#setupControlTemplate():164) - 
+2015-07-03 09:18:34,213 [main] INFO  (TorqueDataModelTask#setupControlTemplate():165) - ...Using Java control: om/ControlGenerateJava.vm
+2015-07-03 09:18:34,355 [main] INFO  (DTDResolver#resolveEntity():195) - ...Resolving XML by database.dtd in same package
+2015-07-03 09:18:34,507 [main] INFO  (DfAbstractTexenTask#fireVelocityProcess():253) - generator.parse("om/ControlGenerateJava.vm", ctx);
+2015-07-03 09:18:34,965 [main] INFO  (Database#doEnableGenerateOutputDirectory():1143) - ...Setting up generateOutputDirectory: ../src/main/java
+2015-07-03 09:18:34,977 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():62) - /=======================================
+2015-07-03 09:18:34,978 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():63) - ...Initializing additional primary keys.
+2015-07-03 09:18:34,997 [main] INFO  (DfAdditionalPrimaryKeyInitializer#initializeAdditionalPrimaryKey():88) - ==========/
+2015-07-03 09:18:34,999 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():62) - /=======================================
+2015-07-03 09:18:35,000 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():63) - ...Initializing additional unique keys.
+2015-07-03 09:18:35,015 [main] INFO  (DfAdditionalUniqueKeyInitializer#initializeAdditionalUniqueKey():83) - ==========/
+2015-07-03 09:18:35,018 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():68) - /=======================================
+2015-07-03 09:18:35,019 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():69) - ...Initializing additional foreign keys.
+2015-07-03 09:18:35,030 [main] INFO  (DfAdditionalForeignKeyInitializer#initializeAdditionalForeignKey():88) - ==========/
+2015-07-03 09:18:35,067 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():58) - /=============================
+2015-07-03 09:18:35,068 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():59) - ...Initializing include query.
+2015-07-03 09:18:35,068 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():81) - String
+2015-07-03 09:18:35,069 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():81) - Number
+2015-07-03 09:18:35,069 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():81) - Date
+2015-07-03 09:18:35,070 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():86) -   NotEqual -> []
+2015-07-03 09:18:35,070 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():86) -   InScope -> []
+2015-07-03 09:18:35,070 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():86) -   NotInScope -> []
+2015-07-03 09:18:35,071 [main] INFO  (DfIncludeQueryInitializer#checkQueryMap():81) - OrderBy
+2015-07-03 09:18:35,071 [main] INFO  (DfIncludeQueryInitializer#initializeIncludeQuery():61) - ========/
+2015-07-03 09:18:35,135 [main] INFO  (Database#info():2696) - public void parseAllCommon() {
+2015-07-03 09:18:35,139 [main] INFO  (Database#info():2696) -     parse('DBCurrent');
+2015-07-03 09:18:35,169 [main] INFO  (Database#info():2696) -     parse('DBFluteConfig');
+2015-07-03 09:18:35,208 [main] INFO  (Database#info():2696) -     parse('DBFluteInitializer');
+2015-07-03 09:18:35,229 [main] INFO  (Database#info():2696) -     parse('DBMetaInstanceHandler');
+2015-07-03 09:18:35,302 [main] INFO  (Database#info():2696) -     parse('EntityDefinedCommonColumn');
+2015-07-03 09:18:35,336 [main] INFO  (Database#info():2696) -     parse('ImplementedBehaviorSelector');
+2015-07-03 09:18:35,345 [main] INFO  (Database#info():2696) -     parse('ImplementedCommonColumnAutoSetupper');
+2015-07-03 09:18:35,365 [main] INFO  (Database#info():2696) -     parse('ImplementedInvokerAssistant');
+2015-07-03 09:18:35,388 [main] INFO  (Database#info():2696) -     parse('ImplementedSqlClauseCreator');
+2015-07-03 09:18:35,391 [main] INFO  (Database#info():2696) - }
+2015-07-03 09:18:35,391 [main] INFO  (Database#info():2696) - public void parseContainerConfig() {
+2015-07-03 09:18:35,393 [main] INFO  (Database#info():2696) -     parse('dbfexample\dbflute\allcommon\DBFluteModule.java')
+2015-07-03 09:18:35,431 [main] INFO  (Database#info():2696) - }
+2015-07-03 09:18:35,459 [main] INFO  (DfOldClassHandler#info():1033) - public void deleteOldTableClass() {
+2015-07-03 09:18:35,531 [main] INFO  (DfOldClassHandler#info():1033) - }
+2015-07-03 09:18:35,532 [main] INFO  (Database#info():2696) - public void parseTableClass() {
+2015-07-03 09:18:35,536 [main] INFO  (Database#info():2696) -     parse('customer');
+2015-07-03 09:18:35,785 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():53) - ...Loading sequence informations
+2015-07-03 09:18:35,790 [main] INFO  (DfSequenceExtractorBase#selectStringList():75) - select * from information_schema.sequences where sequence_schema in ('public')
+2015-07-03 09:18:35,822 [main] INFO  (DfDataSourceHandler#createConnection():166) - ...Connecting to database by data source:
+2015-07-03 09:18:36,181 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():233) -   product = PostgreSQL 9.1.7
+2015-07-03 09:18:36,182 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():234) -   driver  = PostgreSQL Native Driver PostgreSQL 9.3 JDBC4.1 (build 1102) for JDBC 4.0
+2015-07-03 09:18:36,219 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():77) - ...Connecting to the schema
+2015-07-03 09:18:36,219 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():78) - set search_path to public
+2015-07-03 09:18:36,300 [main] INFO  (DfSequenceExtractorPostgreSQL#doGetSequenceMap():99) - 
+[SEQUENCE]
+ godbfexam.public.login_id_seq = godbfexam.public.login_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.session_id_seq = godbfexam.public.session_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.sys_table_id_seq = godbfexam.public.sys_table_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.product_id_seq = godbfexam.public.product_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.user_table_id_seq = godbfexam.public.user_table_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.sales_slip_id_seq = godbfexam.public.sales_slip_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.stock_id_seq = godbfexam.public.stock_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.employee_id_seq = godbfexam.public.employee_id_seq:{1 to 9223372036854775807, increment 1}
+ godbfexam.public.customer_id_seq = godbfexam.public.customer_id_seq:{1 to 9223372036854775807, increment 1}
+2015-07-03 09:18:36,465 [main] INFO  (Database#info():2696) -     parse('employee');
+2015-07-03 09:18:36,763 [main] INFO  (Database#info():2696) -     parse('login');
+2015-07-03 09:18:36,971 [main] INFO  (Database#info():2696) -     parse('product');
+2015-07-03 09:18:37,220 [main] INFO  (Database#info():2696) -     parse('sales_slip');
+2015-07-03 09:18:37,475 [main] INFO  (Database#info():2696) -     parse('session');
+2015-07-03 09:18:37,711 [main] INFO  (Database#info():2696) -     parse('stock');
+2015-07-03 09:18:37,953 [main] INFO  (Database#info():2696) -     parse('sys_table');
+2015-07-03 09:18:38,144 [main] INFO  (Database#info():2696) -     parse('user_table');
+2015-07-03 09:18:38,360 [main] INFO  (Database#info():2696) - }
+2015-07-03 09:18:38,361 [main] INFO  (Database#info():2696) -  
+2015-07-03 09:18:38,923 [main] INFO  (DfRefreshResourceProcess#show():297) - ...Refreshing [dbflute1.1] by http://localhost:8386/
+2015-07-03 09:18:39,932 [main] INFO  (DfRefreshResourceProcess#show():297) - ...Retrying refreshing by default secondary URL http://localhost:8387/
+2015-07-03 09:18:40,934 [main] INFO  (DfRefreshResourceProcess#show():297) - Look! Read the message below.
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Failed to refresh the resources.
+
+[Project List]
+[dbflute1.1]
+
+[Request URL]
+http://localhost:8386/
+
+[IOExpception]
+ConnectException
+Connection refused: connect
+* * * * * * * * * */
+2015-07-03 09:18:40,939 [main] INFO  (DfDataSourceHandler#destroy():120) - ...closeReally()
+2015-07-03 09:18:40,957 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():139) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m07s055ms
+
+  DBFLUTE_CLIENT: {postgresql}
+    database  = postgresql (PostgreSQL 9.1.7)
+    language  = java
+    container = guice
+    package   = dbfexample.dbflute
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver
+    url    = jdbc:postgresql://localhost:5432/godbfexam
+    schema = {godbfexam.public as main}
+    user   = test
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = dbflute1.1
+_/_/_/_/_/_/_/_/_/_/ {Generate}
