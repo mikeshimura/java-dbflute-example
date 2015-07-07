@@ -19,4 +19,13 @@ public class CommonUtil {
 		
 	}
 
+	public static String convertToString(Object data) {
+		String start = null;
+		Object ostart = data;
+		if (ostart != null) {
+			start = data.toString();
+		}
+		return start;
+	}
+
 }

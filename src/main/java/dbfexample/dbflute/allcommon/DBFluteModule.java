@@ -108,6 +108,11 @@ public class DBFluteModule extends AbstractModule {
             bind(SysTableBhv.class).toInstance(bhv);
         }
         {
+            TestTableBhv bhv = new TestTableBhv();
+            bhv.setBehaviorCommandInvoker(ker); bhv.setBehaviorSelector(tor); bhv.setCommonColumnAutoSetupper(per);
+            bind(TestTableBhv.class).toInstance(bhv);
+        }
+        {
             UserTableBhv bhv = new UserTableBhv();
             bhv.setBehaviorCommandInvoker(ker); bhv.setBehaviorSelector(tor); bhv.setCommonColumnAutoSetupper(per);
             bind(UserTableBhv.class).toInstance(bhv);

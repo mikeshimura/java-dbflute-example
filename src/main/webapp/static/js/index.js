@@ -46,9 +46,11 @@
     }
     if (name === "loginForm#LoginBtn") {
       $w.flux.actions.loginClick(jsx.state.loginForm);
+      return;
     }
     if (name === "alert#CloseBtn") {
       $w.flux.actions.$c_alertHide();
+      return;
     }
     if (name === "btnLogin") {
       if (jsx.state.page.logbtn === "LOGIN") {
@@ -59,12 +61,23 @@
       }
       $w.windowClose();
       $w.flux.actions.logoffClick();
-    }
-    if (jsx.state.page.name === "") {
       return;
     }
-    if (name === "btnLoginWin") {
-      return $w.windowOpen("/user");
+    if (jsx.state.page.name === "") {
+      $w.flux.actions.$c_alertShow("LOINしていません");
+      return;
+    }
+    if (name === "btnCustomer") {
+      $w.windowOpen("/customer");
+    }
+    if (name === "btnCustomert") {
+      $w.windowOpen("/customert");
+    }
+    if (name === "btnCustomerin") {
+      $w.windowOpen("/customerin");
+    }
+    if (name === "btnUsertbl") {
+      return $w.windowOpen("/usertbl");
     }
   };
 

@@ -11,7 +11,7 @@ public class RestEasyModule extends RequestScopeModule {
 	protected void configure() {
 		super.configure();
 		GuiceUtil.autoBinder(binder(), new String[] { "dbfexample.router",
-				"dbfexample.service" });
+				"dbfexample.service","dbfexample.util" });
 		bind(ClientErrorExceptionMapper.class);
 		bind(AccessContextProducerInterceptor.class);
 		bind(AccessContextCleanerInterceptor.class);

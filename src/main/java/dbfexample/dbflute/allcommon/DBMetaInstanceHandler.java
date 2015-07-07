@@ -39,6 +39,7 @@ public class DBMetaInstanceHandler implements DBMetaProvider {
         tmpMap.put("session", "dbfexample.dbflute.bsentity.dbmeta.SessionDbm");
         tmpMap.put("stock", "dbfexample.dbflute.bsentity.dbmeta.StockDbm");
         tmpMap.put("sys_table", "dbfexample.dbflute.bsentity.dbmeta.SysTableDbm");
+        tmpMap.put("test_table", "dbfexample.dbflute.bsentity.dbmeta.TestTableDbm");
         tmpMap.put("user_table", "dbfexample.dbflute.bsentity.dbmeta.UserTableDbm");
         _tableDbNameClassNameMap = Collections.unmodifiableMap(tmpMap);
     }

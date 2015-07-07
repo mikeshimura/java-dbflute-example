@@ -368,6 +368,36 @@
             <unique-column name="del_flag" position="4"/>
         </unique>
     </table>
+    <table name="test_table" schema="godbfexam.public" type="TABLE">
+        <column autoIncrement="true" dbType="serial"
+            default="nextval('test_table_id_seq'::regclass)"
+            javaType="Integer" name="id" pkName="test_table_pkey"
+            pkPosition="1" primaryKey="true" required="true" size="10" type="INTEGER"/>
+        <column dbType="varchar" javaType="String" name="test_id"
+            required="true" size="30" type="VARCHAR"/>
+        <column dbType="date" javaType="java.time.LocalDate"
+            name="test_date" size="13" type="DATE"/>
+        <column dbType="timestamp" javaType="java.time.LocalDateTime"
+            name="test_timestamp" size="29, 6" type="TIMESTAMP"/>
+        <column dbType="int4" javaType="Integer" name="test_nbr"
+            required="true" size="10" type="INTEGER"/>
+        <column dbType="int4" javaType="Integer" name="version_no"
+            required="true" size="10" type="INTEGER"/>
+        <column dbType="int4" default="0" javaType="Integer"
+            name="del_flag" required="true" size="10" type="INTEGER"/>
+        <column dbType="timestamp" javaType="java.time.LocalDateTime"
+            name="register_datetime" required="true" size="29, 6" type="TIMESTAMP"/>
+        <column dbType="varchar" javaType="String" name="register_user"
+            required="true" size="30" type="VARCHAR"/>
+        <column dbType="varchar" javaType="String"
+            name="register_process" required="true" size="30" type="VARCHAR"/>
+        <column dbType="timestamp" javaType="java.time.LocalDateTime"
+            name="update_datetime" required="true" size="29, 6" type="TIMESTAMP"/>
+        <column dbType="varchar" javaType="String" name="update_user"
+            required="true" size="30" type="VARCHAR"/>
+        <column dbType="varchar" javaType="String" name="update_process"
+            required="true" size="30" type="VARCHAR"/>
+    </table>
     <table name="user_table" schema="godbfexam.public" type="TABLE">
         <column autoIncrement="true" dbType="serial"
             default="nextval('user_table_id_seq'::regclass)"
@@ -433,5 +463,7 @@
             minimumValue="1" name="employee_id_seq" schema="godbfexam.public"/>
         <sequence incrementSize="1" maximumValue="9223372036854775807"
             minimumValue="1" name="customer_id_seq" schema="godbfexam.public"/>
+        <sequence incrementSize="1" maximumValue="9223372036854775807"
+            minimumValue="1" name="test_table_id_seq" schema="godbfexam.public"/>
     </sequenceGroup>
 </database>

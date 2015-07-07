@@ -1,4 +1,23 @@
 map:{
+    ; 2015/07/05 21:57:36 = map:{
+        ; diffDate = 2015/07/05 21:57:36
+        ; tableCount = map:{
+            ; next = 10
+            ; previous = 9
+        }
+        ; tableDiff = map:{
+            ; test_table = map:{
+                ; tableName = test_table
+                ; diffType = ADD
+            }
+        }
+        ; sequenceDiff = map:{
+            ; godbfexam.public.test_table_id_seq = map:{
+                ; sequenceName = godbfexam.public.test_table_id_seq
+                ; diffType = ADD
+            }
+        }
+    }
     ; 2015/07/02 20:34:11 = map:{
         ; diffDate = 2015/07/02 20:34:11
         ; tableCount = map:{

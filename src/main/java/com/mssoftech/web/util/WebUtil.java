@@ -8,7 +8,7 @@ public class WebUtil {
 		return setFetchResult(errorMessage, -1, 0, 1);
 	}
 
-	private static HashMap setFetchResult(Object data, int status, int startRow,
+	public static HashMap setFetchResult(Object data, int status, int startRow,
 			int totalRows) {
 		HashMap response = getResponse(data, status, startRow, totalRows);
 		HashMap result = new HashMap();
@@ -31,5 +31,4 @@ public class WebUtil {
 		return response;
 	}
 
-
-}
+	}

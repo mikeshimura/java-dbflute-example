@@ -28,8 +28,10 @@ $w.handleClick = (jsx,e) ->
     })
   if name=="loginForm#LoginBtn"
      $w.flux.actions.loginClick(jsx.state.loginForm)
+     return
   if name=="alert#CloseBtn"
      $w.flux.actions.$c_alertHide()
+     return
   if name=="btnLogin"
     if jsx.state.page.logbtn == "LOGIN"
       jsx.setState({
@@ -38,12 +40,21 @@ $w.handleClick = (jsx,e) ->
       return
     $w.windowClose()
     $w.flux.actions.logoffClick()
-
+    return
   if jsx.state.page.name == "" 
-      return
+    
+    
+    $w.flux.actions.$c_alertShow("LOINしていません")
+    return
 #これ以下はLOGIN状態のみ有効
-  if name=="btnLoginWin"
-    $w.windowOpen("/user")
+  if name=="btnCustomer"
+    $w.windowOpen("/customer")
+  if name=="btnCustomert"
+    $w.windowOpen("/customert")
+  if name=="btnCustomerin"
+    $w.windowOpen("/customerin")
+  if name=="btnUsertbl"
+    $w.windowOpen("/usertbl")
 $w.handleLoginKeyPress = (jsx,e) ->
   key=e.key
   if e.key=="Enter"

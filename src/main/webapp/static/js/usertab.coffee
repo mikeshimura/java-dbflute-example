@@ -40,7 +40,8 @@ $w.handleClick = (jsx,e,tab) ->
     jsx.setState(logintemp)
 $w.formSearch = (jsx) ->
   criteria=$c.createCriteria(jsx.state.search,["loginId","name"])
-  $w.flux.actions.$c_rcd_fetch(jsx.state.login,jsx.state.form,"login",criteria)
+  maxRecord=$w.app.state.usertbl_search.maxRecord
+  $w.flux.actions.$c_rcd_fetch(jsx.state.login,jsx.state.form,"login",criteria,maxRecord)
 $w.formUpdate = (jsx) ->
   form = jsx.state.form
   res = ""
@@ -77,7 +78,7 @@ $w.formUpdateCheck = (form) ->
  
 $w.formClear = (jsx) ->
   formtemp={
-      form:{
+    form:{
       loginId:""
       name:""
       id:""

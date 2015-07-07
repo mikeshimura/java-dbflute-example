@@ -86,7 +86,7 @@ $w.Application = React.createClass({displayName: 'Application',
       React.createElement("div", {className: "container-fixed", style: {fontSize:12,border:1,borderStyle:"solid",width:800,height:600}}, 
 
       React.createElement(b.Row, {className: "darkBgLarge", style: {margin:0,height:40,lineHeight:"40px",verticalAlign: "middle"}}, 
-        React.createElement(b.Col, {xs: 5, style: {textAlign: "center"}}, "Test System"
+        React.createElement(b.Col, {xs: 5, style: {textAlign: "center"}}, "JAVA DBFlute WEB Framework"
         ), 
         React.createElement(b.Col, {xs: 5, className: "darkBgMid", style: {textAlign: "center"}}, this.state.page.name
         ), 
@@ -101,10 +101,32 @@ $w.Application = React.createClass({displayName: 'Application',
       React.createElement(b.Row, {　style: {height:20}}
 
       ), 
-      React.createElement(b.Row, null, 
+      React.createElement(b.Row, {style: {height:32}}, 
         React.createElement(b.Col, {xs: 1, xsOffset: 1}, 
-        React.createElement(b.Button, {bsSize: "small", bsStyle: "primary", onClick: this.handleClick, name: "btnLoginWin"}, 
-        "USER管理")
+        React.createElement(b.Button, {bsSize: "small", bsStyle: "primary", onClick: this.handleClick, name: "btnCustomer", 
+        style: {width:160,height:26}}, 
+        "Customer管理 標準")
+        )
+      ), 
+      React.createElement(b.Row, {style: {height:32}}, 
+        React.createElement(b.Col, {xs: 1, xsOffset: 1}, 
+        React.createElement(b.Button, {bsSize: "small", bsStyle: "primary", onClick: this.handleClick, name: "btnCustomert", 
+        style: {width:160,height:26}}, 
+        "Customer管理 タブ")
+        )
+      ), 
+      React.createElement(b.Row, {style: {height:32}}, 
+        React.createElement(b.Col, {xs: 1, xsOffset: 1}, 
+        React.createElement(b.Button, {bsSize: "small", bsStyle: "primary", onClick: this.handleClick, name: "btnCustomerin", 
+        style: {width:160,height:26}}, 
+        "Customer管理 インライン")
+        )
+      ), 
+      React.createElement(b.Row, {style: {height:32}}, 
+        React.createElement(b.Col, {xs: 1, xsOffset: 1}, 
+        React.createElement(b.Button, {bsSize: "small", bsStyle: "primary", onClick: this.handleClick, name: "btnUsertbl", 
+        style: {width:160,height:26}}, 
+        "User Table管理")
         )
       ), 
       React.createElement($w.LoginModal, {isShow: this.state.loginForm_isShow, loginId: this.state.loginForm.loginId, 

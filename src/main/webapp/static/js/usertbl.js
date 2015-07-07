@@ -49,9 +49,10 @@
   };
 
   $w.usertbl_formSearch = function() {
-    var criteria;
+    var criteria, maxRecord;
     criteria = $c.createCriteria($w.app.state.usertbl_search, ["tableName", "key1"]);
-    return $w.flux.actions.$c_rcd_fetch($w.app.state.usertbl, $w.app.state.usertbl_form, "usertbl", criteria);
+    maxRecord = $w.app.state.usertbl_search.maxRecord;
+    return $w.flux.actions.$c_rcd_fetch($w.app.state.usertbl, $w.app.state.usertbl_form, "usertbl", criteria, maxRecord);
   };
 
   $w.usertbl_formUpdate = function() {

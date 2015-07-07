@@ -32,7 +32,8 @@ $w.handleClick = (e) ->
     $w.app.setState(temp)
 $w.login_formSearch = () ->
   criteria=$c.createCriteria($w.app.state.login_search,["loginId","name"])
-  $w.flux.actions.$c_rcd_fetch($w.app.state.login,$w.app.state.login_form,"login",criteria)
+  maxRecord=$w.app.state.login_search.maxRecord
+  $w.flux.actions.$c_rcd_fetch($w.app.state.login,$w.app.state.login_form,"login",criteria,maxRecord)
 $w.login_formUpdate = () ->
   $w.flux.actions.$c_rcd_update($w.app.state.login,$w.app.state.login_form,"login")
 $w.login_formDelete = () ->

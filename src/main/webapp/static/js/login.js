@@ -49,9 +49,10 @@
   };
 
   $w.login_formSearch = function() {
-    var criteria;
+    var criteria, maxRecord;
     criteria = $c.createCriteria($w.app.state.login_search, ["loginId", "name"]);
-    return $w.flux.actions.$c_rcd_fetch($w.app.state.login, $w.app.state.login_form, "login", criteria);
+    maxRecord = $w.app.state.login_search.maxRecord;
+    return $w.flux.actions.$c_rcd_fetch($w.app.state.login, $w.app.state.login_form, "login", criteria, maxRecord);
   };
 
   $w.login_formUpdate = function() {

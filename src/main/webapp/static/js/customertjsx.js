@@ -311,6 +311,7 @@ $w.Application = React.createClass({displayName: 'Application',
           React.createElement(b.Col, {xs: 3}, 
           React.createElement(b.Input, {type: "text", value: this.state.customer_form.id, 
             name: "customer_form#id", onChange: $w.handleChange, 
+            disabled: true, 
             style: {height:24,fontSize:12,width:"100%"}})
           )
       ), 
@@ -320,6 +321,7 @@ $w.Application = React.createClass({displayName: 'Application',
           React.createElement(b.Col, {xs: 3}, 
           React.createElement(b.Input, {type: "text", value: this.state.customer_form.versionNo, 
             name: "customer_form#versionNo", onChange: $w.handleChange, 
+            disabled: true, 
             style: {height:24,fontSize:12,width:"100%"}})
           )
       )

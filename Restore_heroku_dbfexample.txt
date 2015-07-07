@@ -1,0 +1,1 @@
+ heroku pg:backups restore 'https://s3.amazonaws.com/herokudb/godbfexam.dump' DATABASE_URL -a java-dbflute-example

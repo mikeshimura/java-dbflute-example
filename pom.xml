@@ -5,6 +5,11 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>javadbfexam</name>
 <repositories>
+	<repository>
+	    <id>maven.seasar.org</id>
+	    <name>The Seasar Foundation Maven2 Repository</name>
+	    <url>http://maven.seasar.org/maven2</url>
+	</repository>
     <!--other repositories if any-->
     <repository>
         <id>project.local</id>
@@ -163,6 +168,11 @@
 		  <artifactId>commons-codec</artifactId>
 		  <version>1.7</version>
 		</dependency>
+		  <dependency>
+		    <groupId>org.seasar.util</groupId>
+		      <artifactId>s2util</artifactId>
+		      <version>0.0.1</version>
+		  </dependency>
 		<dependency>
 			<groupId>com.atomikos</groupId>
 			<artifactId>transactions-essentials-all</artifactId>

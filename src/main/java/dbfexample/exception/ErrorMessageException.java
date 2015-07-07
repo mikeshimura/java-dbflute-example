@@ -1,6 +1,6 @@
 package dbfexample.exception;
 
-public class ErrorMessageException extends Exception {
+public class ErrorMessageException extends RuntimeException {
 	private static final long serialVersionUID = 1L;
 
 	public ErrorMessageException(String message) {

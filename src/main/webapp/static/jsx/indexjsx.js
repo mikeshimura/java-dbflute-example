@@ -86,7 +86,7 @@ $w.Application = React.createClass({
       <div className="container-fixed" style={{fontSize:12,border:1,borderStyle:"solid",width:800,height:600}}>
 
       <b.Row className="darkBgLarge" style={{margin:0,height:40,lineHeight:"40px",verticalAlign: "middle"}}>
-        <b.Col xs={5} style={{textAlign: "center"}}>Test System
+        <b.Col xs={5} style={{textAlign: "center"}}>JAVA DBFlute WEB Framework
         </b.Col>
         <b.Col xs={5} className="darkBgMid" style={{textAlign: "center"}}>{this.state.page.name}
         </b.Col>
@@ -101,10 +101,32 @@ $w.Application = React.createClass({
       <b.Row　style={{height:20}}>
 
       </b.Row>
-      <b.Row>
+      <b.Row style={{height:32}}>
         <b.Col xs={1} xsOffset={1} >
-        <b.Button bsSize="small" bsStyle="primary" onClick={this.handleClick} name="btnLoginWin">
-        USER管理</b.Button>
+        <b.Button bsSize="small" bsStyle="primary" onClick={this.handleClick} name="btnCustomer"
+        style={{width:160,height:26}}>
+        Customer管理 標準</b.Button>
+        </b.Col>      
+      </b.Row>
+      <b.Row style={{height:32}}>
+        <b.Col xs={1} xsOffset={1} >
+        <b.Button bsSize="small" bsStyle="primary" onClick={this.handleClick} name="btnCustomert"
+        style={{width:160,height:26}}>
+        Customer管理 タブ</b.Button>
+        </b.Col>      
+      </b.Row>
+      <b.Row style={{height:32}}>
+        <b.Col xs={1} xsOffset={1} >
+        <b.Button bsSize="small" bsStyle="primary" onClick={this.handleClick} name="btnCustomerin"
+        style={{width:160,height:26}}>
+        Customer管理 インライン</b.Button>
+        </b.Col>      
+      </b.Row>
+      <b.Row style={{height:32}}>
+        <b.Col xs={1} xsOffset={1} >
+        <b.Button bsSize="small" bsStyle="primary" onClick={this.handleClick} name="btnUsertbl"
+        style={{width:160,height:26}}>
+        User Table管理</b.Button>
         </b.Col>      
       </b.Row>
       <$w.LoginModal isShow={this.state.loginForm_isShow} loginId={this.state.loginForm.loginId}
