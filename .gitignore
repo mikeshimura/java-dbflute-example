@@ -5,6 +5,6 @@
 .log
 .lck
 .out
-.module-cache/**
+.module-cache
 target
 mydbflute
