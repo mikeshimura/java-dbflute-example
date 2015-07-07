@@ -26,6 +26,7 @@ $w.handleClick = (jsx,e) ->
         password:""
       }
     })
+    return
   if name=="loginForm#LoginBtn"
      $w.flux.actions.loginClick(jsx.state.loginForm)
      return

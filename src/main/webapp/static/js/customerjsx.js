@@ -4,7 +4,7 @@
 $w.width=900;
 $w.height=800;
 $w.tableHeight=340;
-$w.tableColW={c1:60,c2:100,c3:100,c4:100,c5:80,c6:100,c7:80,c8:80,c9:50,c10:50}
+$w.tableColW={c1:60,c2:150,c3:180,c4:100,c5:80,c6:100,c7:100,c8:80,c9:50,c10:50}
 $w.customerRows = React.createClass({displayName: 'customerRows',
 
     render: function() {
