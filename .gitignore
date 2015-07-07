@@ -8,3 +8,7 @@
 .module-cache
 target
 mydbflute
+*.epoch
+*.out
+*.lck
+velocity.log.*
