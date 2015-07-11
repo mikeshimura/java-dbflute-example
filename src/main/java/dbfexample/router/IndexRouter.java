@@ -20,11 +20,6 @@ public class IndexRouter {
 	@Inject
 	private ScreenSecurityUtil screenSecurityUtil;
 
-	//
-	// @Inject
-	// private CustomerBhv customerBhv;
-	// @Inject
-	// private Injector injector;
 	@GET
 	@Produces("text/html;charset=UTF-8")
 	public String index(@Context HttpServletRequest request, @Context HttpServletResponse response) throws Exception {
@@ -90,6 +85,17 @@ public class IndexRouter {
 	public String usertbl(@Context HttpServletRequest request, @Context HttpServletResponse response) throws Exception {
 		return screenSecurityUtil.generateAuthorizedScreen(request, response, "USER TABLE管理",
 				new String[] { "/js/$c.js", "/js/$v.js", "/js/usertbl.js", "/js/_cjsx.js", "/js/usertbljsx.js" },
+				new String[] { "/js/lib/fluxxor.js", "/js/lib/react.js", "/js/lib/react-bootstrap.js",
+						"/js/lib/jquery-1.11.1.js", "/js/lib/lodash.js" },
+				new String[] { "/css/bootstrap.css", "/css/main.css" }, new String[] {});
+	}
+	@GET
+	@Path("testtable")
+	@Produces("text/html;charset=UTF-8")
+	public String testtable(@Context HttpServletRequest request, @Context HttpServletResponse response)
+			throws Exception {
+		return screenSecurityUtil.generateAuthorizedScreen(request, response, "TEST TABLE 管理",
+				new String[] { "/js/$c.js", "/js/$v.js", "/js/testtable.js", "/js/_cjsx.js", "/js/testtablejsx.js" },
 				new String[] { "/js/lib/fluxxor.js", "/js/lib/react.js", "/js/lib/react-bootstrap.js",
 						"/js/lib/jquery-1.11.1.js", "/js/lib/lodash.js" },
 				new String[] { "/css/bootstrap.css", "/css/main.css" }, new String[] {});

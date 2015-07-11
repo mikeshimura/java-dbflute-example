@@ -469,4 +469,32 @@
     }
   ];
 
+  $c.numberOption = [
+    {
+      value: "",
+      label: ""
+    }, {
+      value: "=",
+      label: "="
+    }, {
+      value: "between",
+      label: "間"
+    }, {
+      value: ">",
+      label: ">"
+    }, {
+      value: ">=",
+      label: ">="
+    }, {
+      value: "<",
+      label: "<"
+    }, {
+      value: "<=",
+      label: "<="
+    }, {
+      value: "<>",
+      label: "<>"
+    }
+  ];
+
 }).call(this);

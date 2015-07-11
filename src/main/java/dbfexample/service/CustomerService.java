@@ -8,27 +8,23 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import org.dbflute.cbean.result.ListResultBean;
 import org.dbflute.optional.OptionalEntity;
 import org.seasar.util.beans.util.BeanUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import com.google.inject.Inject;
+import com.mssoftech.web.exception.ErrorMessageException;
 import com.mssoftech.web.util.CommonUtil;
 import com.mssoftech.web.util.DBFluteUtil;
 import com.mssoftech.web.util.WebUtil;
-
 import dbfexample.dbflute.cbean.CustomerCB;
 import dbfexample.dbflute.exbhv.CustomerBhv;
 import dbfexample.dbflute.exentity.Customer;
 import dbfexample.dbflute.exentity.Login;
 import dbfexample.dbflute.exentity.Session;
-import dbfexample.exception.ErrorMessageException;
 
 public class CustomerService {
 	private static final Logger log = LoggerFactory
@@ -147,7 +143,7 @@ public class CustomerService {
 		}
 		Customer old = oldOpt.get();
 		if (!upd.getCusCd().equals(old.getCusCd()) && dupCheck(upd)) {
-			throw new ErrorMessageException("この 社員番号は既に使用されています。");
+			throw new ErrorMessageException("この Customer Codeは既に使用されています。");
 		}
 		customerBhv.update(upd);
 		return WebUtil.setSingleFetchResult(entityToMap(upd));

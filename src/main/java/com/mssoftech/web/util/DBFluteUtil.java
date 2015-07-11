@@ -5,7 +5,6 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
-
 import org.dbflute.cbean.AbstractConditionQuery;
 import org.dbflute.cbean.coption.ConditionOptionCall;
 import org.dbflute.cbean.coption.LikeSearchOption;
@@ -15,7 +14,8 @@ import org.seasar.util.exception.ParseRuntimeException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import dbfexample.exception.ErrorMessageException;
+import com.mssoftech.web.exception.ErrorMessageException;
+
 
 public class DBFluteUtil {
 	private static final Logger log = LoggerFactory

@@ -13,6 +13,7 @@ import com.mssoftech.web.util.AjaxUtil;
 
 import dbfexample.service.CustomerService;
 import dbfexample.service.LoginService;
+import dbfexample.service.TestTableService;
 import dbfexample.service.UserTableService;
 
 @Path("ajax")
@@ -71,5 +72,14 @@ public class AjaxRouter {
 		AjaxUtil ajaxUtil=injector.getInstance(AjaxUtil.class);
 		return ajaxUtil.invoke(str, request, response,"execute",
 				UserTableService.class);
+	}
+	@POST
+	@Path("testtable")
+	@Produces("application/json;charset=UTF-8")
+	public String testtable(String str, @Context HttpServletRequest request,
+			@Context HttpServletResponse response) throws Exception {
+		AjaxUtil ajaxUtil=injector.getInstance(AjaxUtil.class);
+		return ajaxUtil.invoke(str, request, response,"execute",
+				TestTableService.class);
 	}
 }
