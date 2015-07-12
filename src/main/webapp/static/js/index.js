@@ -28,12 +28,13 @@
     return $w.maxWindow = -1;
   };
 
-  $w.handleChange = function(jsx, e) {
-    return $c.handleChange(jsx, e.target.name, e.target.value);
+  $w.handleChange = function(e) {
+    return $c.handleChange($w.app, e.target.name, e.target.value);
   };
 
-  $w.handleClick = function(jsx, e) {
-    var name;
+  $w.handleClick = function(e) {
+    var jsx, name;
+    jsx = $w.app;
     name = e.target.name;
     if (name === "loginForm#CancelBtn") {
       jsx.setState({
@@ -161,7 +162,7 @@
   $w.StoreWatchMixin = Fluxxor.StoreWatchMixin;
 
   $w.pageStore.on("loginComplete", function() {
-    return $w.application.setState({
+    return $w.app.setState({
       loginForm_isShow: false,
       loginForm: {
         loginId: "",

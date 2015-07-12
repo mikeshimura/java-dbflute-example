@@ -14,9 +14,10 @@ $w.windowClose  = ->
       if typeof $w.windowArray[i].window == "object" && $w.windowArray[i].window != null
        $w.windowArray[i].window.close() 
   $w.maxWindow = -1    
-$w.handleChange = (jsx,e) ->
-  $c.handleChange(jsx,e.target.name,e.target.value);
-$w.handleClick = (jsx,e) ->
+$w.handleChange = (e) ->
+  $c.handleChange($w.app,e.target.name,e.target.value);
+$w.handleClick = (e) ->
+  jsx=$w.app
   name=e.target.name
   if name=="loginForm#CancelBtn"
     jsx.setState({
@@ -117,7 +118,7 @@ $w.flux.addActions($c.actions)
 $w.FluxMixin = Fluxxor.FluxMixin(React)
 $w.StoreWatchMixin = Fluxxor.StoreWatchMixin
 $w.pageStore.on("loginComplete", -> 
-  $w.application.setState(
+  $w.app.setState(
     {
       loginForm_isShow:false
       loginForm:{

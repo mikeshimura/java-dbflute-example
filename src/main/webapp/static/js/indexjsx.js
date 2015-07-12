@@ -47,7 +47,7 @@ $w.LoginModal = React.createClass({displayName: 'LoginModal',
 $w.Application = React.createClass({displayName: 'Application',
   mixins: [$w.FluxMixin, $w.StoreWatchMixin("PAGE","COMMON")],
   getInitialState: function() {
-  $w.application = this
+  $w.app = this
       return {
                 loginForm:
                   {
@@ -80,7 +80,7 @@ $w.Application = React.createClass({displayName: 'Application',
           ];
     /*
       <$c.SelectOption options={optionv} style={{width:150,height:24, fontSize:12}} name={"testname"}
-                onChange={this.handleChange} />
+                onChange={$w.handleChange} />
      */
     return (
       React.createElement("div", {className: "container-fixed", style: {fontSize:12,border:1,borderStyle:"solid",width:800,height:600}}, 
@@ -91,7 +91,7 @@ $w.Application = React.createClass({displayName: 'Application',
         React.createElement(b.Col, {xs: 5, className: "darkBgMid", style: {textAlign: "center"}}, this.state.page.name
         ), 
         React.createElement(b.Col, {xs: 1, className: "darkBgMid"}, 
-        React.createElement(b.Button, {bsSize: "small", bsStyle: "primary", onClick: this.handleClick, name: "btnLogin", style: {marginTop:5}}, 
+        React.createElement(b.Button, {bsSize: "small", bsStyle: "primary", onClick: $w.handleClick, name: "btnLogin", style: {marginTop:5}}, 
         this.state.page.logbtn)
         ), 
          React.createElement(b.Col, {xs: 1}, 
@@ -103,48 +103,42 @@ $w.Application = React.createClass({displayName: 'Application',
       ), 
       React.createElement(b.Row, {style: {height:32}}, 
         React.createElement(b.Col, {xs: 1, xsOffset: 1}, 
-        React.createElement(b.Button, {bsSize: "small", bsStyle: "primary", onClick: this.handleClick, name: "btnCustomer", 
+        React.createElement(b.Button, {bsSize: "small", bsStyle: "primary", onClick: $w.handleClick, name: "btnCustomer", 
         style: {width:160,height:26}}, 
         "Customer管理 標準")
         )
       ), 
       React.createElement(b.Row, {style: {height:32}}, 
         React.createElement(b.Col, {xs: 1, xsOffset: 1}, 
-        React.createElement(b.Button, {bsSize: "small", bsStyle: "primary", onClick: this.handleClick, name: "btnCustomert", 
+        React.createElement(b.Button, {bsSize: "small", bsStyle: "primary", onClick: $w.handleClick, name: "btnCustomert", 
         style: {width:160,height:26}}, 
         "Customer管理 タブ")
         )
       ), 
       React.createElement(b.Row, {style: {height:32}}, 
         React.createElement(b.Col, {xs: 1, xsOffset: 1}, 
-        React.createElement(b.Button, {bsSize: "small", bsStyle: "primary", onClick: this.handleClick, name: "btnCustomerin", 
+        React.createElement(b.Button, {bsSize: "small", bsStyle: "primary", onClick: $w.handleClick, name: "btnCustomerin", 
         style: {width:160,height:26}}, 
         "Customer管理 インライン")
         )
       ), 
       React.createElement(b.Row, {style: {height:32}}, 
         React.createElement(b.Col, {xs: 1, xsOffset: 1}, 
-        React.createElement(b.Button, {bsSize: "small", bsStyle: "primary", onClick: this.handleClick, name: "btnUsertbl", 
+        React.createElement(b.Button, {bsSize: "small", bsStyle: "primary", onClick: $w.handleClick, name: "btnUsertbl", 
         style: {width:160,height:26}}, 
         "User Table管理")
         )
       ), 
       React.createElement($w.LoginModal, {isShow: this.state.loginForm_isShow, loginId: this.state.loginForm.loginId, 
        password: this.state.loginForm.password, 
-        onClick: this.handleClick, onChange: this.handleChange, onKeyPress: this.handleLoginKeyPress}), 
-      React.createElement($c.Alert, {isShow: this.state.common.alert.isShow, message: this.state.common.alert.message, onClick: this.handleClick}
+        onClick: $w.handleClick, onChange: $w.handleChange, onKeyPress: this.handleLoginKeyPress}), 
+      React.createElement($c.Alert, {isShow: this.state.common.alert.isShow, message: this.state.common.alert.message, onClick: $w.handleClick}
         )
       )
     );
   },
   componentDidMount: function() {
 
-  },
-  handleChange: function (e) {
-    $w.handleChange(this,e);
-  },
-  handleClick: function (e) {
-    $w.handleClick(this,e);
   },
   handleLoginKeyPress: function (e) {
     $w.handleLoginKeyPress(this,e);

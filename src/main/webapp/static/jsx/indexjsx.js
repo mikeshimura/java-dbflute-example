@@ -47,7 +47,7 @@ $w.LoginModal = React.createClass({
 $w.Application = React.createClass({
   mixins: [$w.FluxMixin, $w.StoreWatchMixin("PAGE","COMMON")],
   getInitialState: function() {
-  $w.application = this
+  $w.app = this
       return {
                 loginForm:
                   {
@@ -80,7 +80,7 @@ $w.Application = React.createClass({
           ];
     /*
       <$c.SelectOption options={optionv} style={{width:150,height:24, fontSize:12}} name={"testname"}
-                onChange={this.handleChange} />
+                onChange={$w.handleChange} />
      */
     return (
       <div className="container-fixed" style={{fontSize:12,border:1,borderStyle:"solid",width:800,height:600}}>
@@ -91,7 +91,7 @@ $w.Application = React.createClass({
         <b.Col xs={5} className="darkBgMid" style={{textAlign: "center"}}>{this.state.page.name}
         </b.Col>
         <b.Col xs={1} className="darkBgMid" >
-        <b.Button bsSize="small" bsStyle="primary" onClick={this.handleClick} name="btnLogin" style={{marginTop:5}}>
+        <b.Button bsSize="small" bsStyle="primary" onClick={$w.handleClick} name="btnLogin" style={{marginTop:5}}>
         {this.state.page.logbtn}</b.Button>
         </b.Col>
          <b.Col xs={1} >
@@ -103,48 +103,42 @@ $w.Application = React.createClass({
       </b.Row>
       <b.Row style={{height:32}}>
         <b.Col xs={1} xsOffset={1} >
-        <b.Button bsSize="small" bsStyle="primary" onClick={this.handleClick} name="btnCustomer"
+        <b.Button bsSize="small" bsStyle="primary" onClick={$w.handleClick} name="btnCustomer"
         style={{width:160,height:26}}>
         Customer管理 標準</b.Button>
         </b.Col>      
       </b.Row>
       <b.Row style={{height:32}}>
         <b.Col xs={1} xsOffset={1} >
-        <b.Button bsSize="small" bsStyle="primary" onClick={this.handleClick} name="btnCustomert"
+        <b.Button bsSize="small" bsStyle="primary" onClick={$w.handleClick} name="btnCustomert"
         style={{width:160,height:26}}>
         Customer管理 タブ</b.Button>
         </b.Col>      
       </b.Row>
       <b.Row style={{height:32}}>
         <b.Col xs={1} xsOffset={1} >
-        <b.Button bsSize="small" bsStyle="primary" onClick={this.handleClick} name="btnCustomerin"
+        <b.Button bsSize="small" bsStyle="primary" onClick={$w.handleClick} name="btnCustomerin"
         style={{width:160,height:26}}>
         Customer管理 インライン</b.Button>
         </b.Col>      
       </b.Row>
       <b.Row style={{height:32}}>
         <b.Col xs={1} xsOffset={1} >
-        <b.Button bsSize="small" bsStyle="primary" onClick={this.handleClick} name="btnUsertbl"
+        <b.Button bsSize="small" bsStyle="primary" onClick={$w.handleClick} name="btnUsertbl"
         style={{width:160,height:26}}>
         User Table管理</b.Button>
         </b.Col>      
       </b.Row>
       <$w.LoginModal isShow={this.state.loginForm_isShow} loginId={this.state.loginForm.loginId}
        password={this.state.loginForm.password} 
-        onClick={this.handleClick} onChange={this.handleChange} onKeyPress={this.handleLoginKeyPress}/>
-      <$c.Alert isShow={this.state.common.alert.isShow} message={this.state.common.alert.message} onClick={this.handleClick}
+        onClick={$w.handleClick} onChange={$w.handleChange} onKeyPress={this.handleLoginKeyPress}/>
+      <$c.Alert isShow={this.state.common.alert.isShow} message={this.state.common.alert.message} onClick={$w.handleClick}
         />
       </div>
     );
   },
   componentDidMount: function() {
 
-  },
-  handleChange: function (e) {
-    $w.handleChange(this,e);
-  },
-  handleClick: function (e) {
-    $w.handleClick(this,e);
   },
   handleLoginKeyPress: function (e) {
     $w.handleLoginKeyPress(this,e);
